@@ -1,0 +1,82 @@
+.wall{
+	h3{
+		margin: 40px 0;
+	}
+}
+
+.numeros{
+	.numero, .numero_dato{
+		display: block;
+		font-size: 30px;
+		font-family: $title-font;
+		font-weight: 700;
+		text-align: center;
+		line-height: 30px;
+	}
+
+	.numero_dato{
+		font-size: 16px;
+		font-weight: 300;
+		color: $gray;
+		line-height: 20px;
+	}
+}
+
+
+.categorias{
+	padding: 0;
+	list-style: none;
+	li{
+		border-bottom: 1px solid #ddd;
+		padding: 8px 0;
+	}
+}
+
+
+.oferta-laboral{
+	margin-bottom: 20px;
+	padding-bottom: 10px;
+	.empresa{
+		display: flex;
+		margin-bottom: 10px;
+		min-height: 40px;
+		align-items: center; 
+		.img{
+			flex: 1;
+			img{
+				max-width: 50px;
+				max-height: 35px;
+			}
+		}
+		.nombre{
+			flex: 5;
+			text-transform: uppercase;
+			
+			h4{
+				font-size: 16px;
+				line-height: 18px;
+			}
+			h5{
+				font-weight: 400;
+				line-height: 10px;
+			}
+		}		
+	}
+
+	.descripcion{
+		max-height: 70px;
+		position: relative;
+		overflow: hidden;
+		color: lighten($text-color,10%); 
+		.overlay{
+			height: 30px;
+			position: absolute;
+			width: 100%;
+			bottom: 0;
+			background: -moz-linear-gradient(top, rgba(255,255,255,0) 1%, rgba(255,255,255,0.12) 9%, rgba(255,255,255,1) 66%, rgba(255,255,255,1) 72%);
+			background: -webkit-linear-gradient(top, rgba(255,255,255,0) 1%,rgba(255,255,255,0.12) 9%,rgba(255,255,255,1) 66%,rgba(255,255,255,1) 72%);
+			background: linear-gradient(to bottom, rgba(255,255,255,0) 1%,rgba(255,255,255,0.12) 9%,rgba(255,255,255,1) 66%,rgba(255,255,255,1) 72%);
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 );
+		}
+	}
+}

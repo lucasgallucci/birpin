@@ -1,0 +1,50 @@
+body{
+	color: $text-color;
+	font-family: $text-font;
+}
+
+h1, h2, h3, h4, h5, h6{
+	font-family: $title-font;
+}
+
+
+
+.btn-primary{
+	background: $main-color;
+	border-bottom-color: darken($main-color,5%);
+	border-right-color: darken($main-color,5%);
+	border-top-color: lighten($main-color,10%);
+	border-left-color: lighten($main-color,10%);
+	&:hover{
+		background: darken($main-color,10%);
+		border-bottom-color: darken($main-color,15%);
+		border-right-color: darken($main-color,15%);
+		border-top-color: lighten($main-color,20%);
+		border-left-color: lighten($main-color,20%);
+	}
+}
+
+.well {
+    background-color: #f7f7f7;
+    padding: 20px 25px 30px;
+    margin: 0 auto 25px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    border: none;
+}
+
+
+.btn{
+	transition: 0.5s;
+}
+
+a{
+	color: $secondary-color;
+	&:hover{
+		color: darken($secondary-color, 10%);
+	}
+}

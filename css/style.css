@@ -1,0 +1,218 @@
+@import url(../bootstrap/css/bootstrap.min.css);
+@import url(../ionicons/css/ionicons.min.css);
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,700,900|Rubik:300,400,500,700");
+body {
+  color: #3b4858;
+  font-family: "Roboto"; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Rubik"; }
+
+.btn-primary {
+  background: #F16527;
+  border-bottom-color: #ef540f;
+  border-right-color: #ef540f;
+  border-top-color: #f48757;
+  border-left-color: #f48757; }
+  .btn-primary:hover {
+    background: #d74c0e;
+    border-bottom-color: #bf430c;
+    border-right-color: #bf430c;
+    border-top-color: #f7a987;
+    border-left-color: #f7a987; }
+
+.well {
+  background-color: #f7f7f7;
+  padding: 20px 25px 30px;
+  margin: 0 auto 25px;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  border: none; }
+
+.btn {
+  transition: 0.5s; }
+
+a {
+  color: #1E91D6; }
+  a:hover {
+    color: #1873a9; }
+
+.navbar-default {
+  background: #F16527;
+  border-radius: 0;
+  margin: 0;
+  border: none; }
+  .navbar-default .navbar-brand {
+    padding: 8px; }
+    .navbar-default .navbar-brand img {
+      max-height: 100%; }
+  .navbar-default .buscador .form-control {
+    width: 380px; }
+    .navbar-default .buscador .form-control .input-group-addon {
+      background-color: white; }
+  .navbar-default .navbar-right {
+    margin-top: 8px; }
+
+.wall h3 {
+  margin: 40px 0; }
+
+.numeros .numero, .numeros .numero_dato {
+  display: block;
+  font-size: 30px;
+  font-family: "Rubik";
+  font-weight: 700;
+  text-align: center;
+  line-height: 30px; }
+.numeros .numero_dato {
+  font-size: 16px;
+  font-weight: 300;
+  color: #999999;
+  line-height: 20px; }
+
+.categorias {
+  padding: 0;
+  list-style: none; }
+  .categorias li {
+    border-bottom: 1px solid #ddd;
+    padding: 8px 0; }
+
+.oferta-laboral {
+  margin-bottom: 20px;
+  padding-bottom: 10px; }
+  .oferta-laboral .empresa {
+    display: flex;
+    margin-bottom: 10px;
+    min-height: 40px;
+    align-items: center; }
+    .oferta-laboral .empresa .img {
+      flex: 1; }
+      .oferta-laboral .empresa .img img {
+        max-width: 50px;
+        max-height: 35px; }
+    .oferta-laboral .empresa .nombre {
+      flex: 5;
+      text-transform: uppercase; }
+      .oferta-laboral .empresa .nombre h4 {
+        font-size: 16px;
+        line-height: 18px; }
+      .oferta-laboral .empresa .nombre h5 {
+        font-weight: 400;
+        line-height: 10px; }
+  .oferta-laboral .descripcion {
+    max-height: 70px;
+    position: relative;
+    overflow: hidden;
+    color: #4f6177; }
+    .oferta-laboral .descripcion .overlay {
+      height: 30px;
+      position: absolute;
+      width: 100%;
+      bottom: 0;
+      background: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 1%, rgba(255, 255, 255, 0.12) 9%, white 66%, white 72%);
+      background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 1%, rgba(255, 255, 255, 0.12) 9%, white 66%, white 72%);
+      background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 1%, rgba(255, 255, 255, 0.12) 9%, white 66%, white 72%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 ); }
+
+footer {
+  background: #3b4858;
+  color: white;
+  padding: 40px 0;
+  font-family: "Rubik";
+  border-top: 3px solid #272f39;
+  margin-top: 30px; }
+  footer h5 {
+    font-size: 18px; }
+  footer ul {
+    padding: 0;
+    list-style: none; }
+    footer ul li {
+      color: #bec8d4; }
+    footer ul.flags li {
+      max-width: 30px;
+      margin-right: 10px;
+      display: inline-block; }
+      footer ul.flags li img {
+        max-width: 100%;
+        border-radius: 3px; }
+    footer ul.social li {
+      display: inline-block;
+      margin-right: 10px; }
+      footer ul.social li a {
+        transition: 0.5s;
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        font-size: 20px;
+        justify-content: center;
+        background: rgba(255, 255, 255, 0.7);
+        color: #3b4858; }
+        footer ul.social li a:hover {
+          background: white;
+          transform: scale(1.1); }
+
+.line {
+  overflow: hidden;
+  text-align: center; }
+  .line:after, .line:before {
+    background-color: #ccc;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 50%; }
+  .line:before {
+    right: 0.5em;
+    margin-left: -50%; }
+  .line:after {
+    left: 0.5em;
+    margin-right: -50%; }
+
+header {
+  background: url("../imagenes/header_home.jpg");
+  background-size: cover;
+  padding: 150px 0;
+  background-position-y: -100px; }
+  header h2 {
+    color: white;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5); }
+    header h2 small {
+      color: white; }
+
+.buscador-header {
+  display: flex; }
+  .buscador-header input {
+    border-radius: 0;
+    flex: 1;
+    border: none;
+    font-family: "Rubik";
+    font-weight: 300;
+    font-size: 15px;
+    box-shadow: none; }
+    .buscador-header input[type=text] {
+      flex: 2;
+      padding-left: 0;
+      border-left: 0; }
+      .buscador-header input[type=text]:first-child {
+        border-right: 1px solid #ccc; }
+  .buscador-header span {
+    background: white;
+    border: none;
+    font-size: 22px;
+    padding: 10px;
+    min-width: 40px;
+    color: #bbb;
+    box-shadow: none; }
+    .buscador-header span.divider {
+      min-width: 1px;
+      border-left: 1px solid #ccc;
+      padding: 0; }
+
+/*# sourceMappingURL=style.css.map */
