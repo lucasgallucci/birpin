@@ -34,7 +34,7 @@
 
 
 .oferta-laboral{
-	margin-bottom: 20px;
+	margin-bottom: 30px;
 	padding-bottom: 10px;
 	.empresa{
 		display: flex;
@@ -67,7 +67,8 @@
 		max-height: 70px;
 		position: relative;
 		overflow: hidden;
-		color: lighten($text-color,10%); 
+		color: lighten($text-color,20%);
+		font-weight: 300;
 		.overlay{
 			height: 30px;
 			position: absolute;

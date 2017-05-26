@@ -81,7 +81,7 @@ a {
     padding: 8px 0; }
 
 .oferta-laboral {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   padding-bottom: 10px; }
   .oferta-laboral .empresa {
     display: flex;
@@ -106,7 +106,8 @@ a {
     max-height: 70px;
     position: relative;
     overflow: hidden;
-    color: #4f6177; }
+    color: #647a95;
+    font-weight: 300; }
     .oferta-laboral .descripcion .overlay {
       height: 30px;
       position: absolute;
@@ -130,7 +131,8 @@ footer {
     padding: 0;
     list-style: none; }
     footer ul li {
-      color: #bec8d4; }
+      color: #bec8d4;
+      padding: 2px 0; }
     footer ul.flags li {
       max-width: 30px;
       margin-right: 10px;
