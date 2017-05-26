@@ -1,12 +1,13 @@
 footer{
 	background: $text-color;
 	color: white;
-	padding: 40px 0;
+	padding: 40px 0 0 0;
 	font-family: $title-font;
 	border-top: 3px solid darken($text-color,10%);
 	margin-top: 30px;
 	h5{
-		font-size: 18px;
+		font-size: 16px;
+		text-transform: uppercase;
 	}
 
 	ul{
@@ -50,6 +51,18 @@ footer{
 						transform: scale(1.1);
 					}
 				}
+			}
+		}
+	}
+
+	.foot{
+		margin-top: 20px;
+		background: darken($text-color,10%);
+		ul{
+			li{
+				display: inline-block;
+				margin: 10px 10px 10px 0;
+				font-size: 12px; 
 			}
 		}
 	}

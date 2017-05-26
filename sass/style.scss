@@ -7,6 +7,10 @@
 @import "wall";
 @import "footer";
 
+@media only screen {
+    @-ms-viewport { width: device-width; }
+}
+
 .line{
 	overflow: hidden;
     text-align: center;

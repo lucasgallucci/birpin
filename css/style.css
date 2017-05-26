@@ -121,12 +121,13 @@ a {
 footer {
   background: #3b4858;
   color: white;
-  padding: 40px 0;
+  padding: 40px 0 0 0;
   font-family: "Rubik";
   border-top: 3px solid #272f39;
   margin-top: 30px; }
   footer h5 {
-    font-size: 18px; }
+    font-size: 16px;
+    text-transform: uppercase; }
   footer ul {
     padding: 0;
     list-style: none; }
@@ -158,7 +159,17 @@ footer {
         footer ul.social li a:hover {
           background: white;
           transform: scale(1.1); }
+  footer .foot {
+    margin-top: 20px;
+    background: #272f39; }
+    footer .foot ul li {
+      display: inline-block;
+      margin: 10px 10px 10px 0;
+      font-size: 12px; }
 
+@media only screen {
+  @-ms-viewport {
+    width: device-width; } }
 .line {
   overflow: hidden;
   text-align: center; }
