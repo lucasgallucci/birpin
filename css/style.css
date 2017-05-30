@@ -8,19 +8,6 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: "Rubik"; }
 
-.btn-primary {
-  background: #F16527;
-  border-bottom-color: #ef540f;
-  border-right-color: #ef540f;
-  border-top-color: #f48757;
-  border-left-color: #f48757; }
-  .btn-primary:hover {
-    background: #d74c0e;
-    border-bottom-color: #bf430c;
-    border-right-color: #bf430c;
-    border-top-color: #f7a987;
-    border-left-color: #f7a987; }
-
 .well {
   background-color: #f7f7f7;
   padding: 20px 25px 30px;
@@ -41,8 +28,82 @@ a {
   a:hover {
     color: #1873a9; }
 
+a, p, input, button, span, label, .btn, .form-group, .form-control {
+  font-size: 13px; }
+
+.shadow {
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5); }
+
+.btn-primary {
+  background: #FF9900;
+  border-top: #ffa31a;
+  border-left: #ffad33;
+  border-right: #e68a00;
+  border-bottom: #f2f2f2;
+  color: white; }
+  .btn-primary:hover, .btn-primary:active, .btn-primary:focus {
+    color: white;
+    background: #cc7a00; }
+
+.btn-secondary {
+  background: #1E91D6;
+  border-top: #2c9de1;
+  border-left: #42a8e5;
+  border-right: #1b82c0;
+  border-bottom: #f2f2f2;
+  color: white; }
+  .btn-secondary:hover, .btn-secondary:active, .btn-secondary:focus {
+    color: white;
+    background: #1873a9; }
+
+.btn3 {
+  background: #ddd;
+  border-top: #eaeaea;
+  border-left: #f7f7f7;
+  border-right: #d0d0d0;
+  border-bottom: #313c49;
+  color: #3b4858; }
+  .btn3:hover, .btn3:active, .btn3:focus {
+    color: #3b4858;
+    background: #c4c4c4; }
+
+.btn-login {
+  text-align: left;
+  color: white;
+  padding: 0;
+  line-height: 30px;
+  font-weight: 300;
+  margin-bottom: 10px;
+  padding-bottom: 3px; }
+  .btn-login span {
+    padding: 0 10px 0 13px;
+    font-size: 20px;
+    position: relative;
+    top: 3px;
+    display: inline-block;
+    width: 40px;
+    text-align: center; }
+  .btn-login.btn-facebook {
+    background: #3b5998;
+    border-top: #4c70ba;
+    border-left: #4c70ba;
+    border-right: #2d4373;
+    border-bottom: #2d4373; }
+  .btn-login.btn-linkedin {
+    background: #007bb5;
+    border-top: #009ee8;
+    border-left: #009ee8;
+    border-right: #005882;
+    border-bottom: #005882; }
+  .btn-login.btn-google {
+    background: #dd4b39;
+    border-top: #e47365;
+    border-left: #e47365;
+    border-right: #c23321;
+    border-bottom: #c23321; }
+
 .navbar-default {
-  background: #F16527;
+  background: #FF9900;
   border-radius: 0;
   margin: 0;
   border: none; }
@@ -166,6 +227,105 @@ footer {
       display: inline-block;
       margin: 10px 10px 10px 0;
       font-size: 12px; }
+
+.modal .modal-dialog .modal-content {
+  background-color: white;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  -moz-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  border: none; }
+  .modal .modal-dialog .modal-content .modal-header {
+    background-color: #004E64; }
+    .modal .modal-dialog .modal-content .modal-header h4, .modal .modal-dialog .modal-content .modal-header h5 {
+      color: white;
+      font-weight: 300; }
+
+body, html {
+  height: 100%; }
+
+#screen-login {
+  background: url("../imagenes/header_login.jpg");
+  background-size: cover; }
+  #screen-login .login {
+    position: relative;
+    top: 50%;
+    transform: translatey(-50%); }
+    #screen-login .login .logo {
+      max-width: 130px;
+      margin: auto;
+      display: block;
+      margin-bottom: 20px; }
+
+#screen-login2 {
+  background: url("../imagenes/header_login.jpg");
+  background-size: cover; }
+  #screen-login2 .login {
+    position: relative;
+    top: 50%;
+    transform: translatey(-50%); }
+    #screen-login2 .login .logo {
+      max-width: 130px;
+      margin: auto;
+      display: block;
+      margin-bottom: 20px; }
+  #screen-login2 .social {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px; }
+    #screen-login2 .social a {
+      width: 28%;
+      text-align: center; }
+      #screen-login2 .social a span {
+        font-size: 25px; }
+  #screen-login2 .btn-info {
+    background: #177E89; }
+
+#create-account .flow article {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border-bottom: 3px solid #ccc; }
+  #create-account .flow article.active {
+    border-bottom: 3px solid #1E91D6; }
+  #create-account .flow article.success {
+    border-bottom: 3px solid #FF9900; }
+    #create-account .flow article.success h4, #create-account .flow article.success h6 {
+      color: #ccc; }
+#create-account .areas .label-default {
+  font-size: 13px;
+  font-weight: 300;
+  padding: 5px 5px 5px 10px;
+  margin-right: 7px;
+  margin-bottom: 10px;
+  display: inline-block; }
+  #create-account .areas .label-default span {
+    margin: 0 5px;
+    font-size: 11px;
+    position: relative;
+    top: 1px; }
+#create-account #subir-cv .modal-dialog {
+  width: 320px; }
+  #create-account #subir-cv .modal-dialog a {
+    text-align: left;
+    margin-bottom: 10px;
+    padding-top: 5px; }
+    #create-account #subir-cv .modal-dialog a span {
+      font-size: 20px;
+      margin: 0 10px 0 0;
+      position: relative;
+      top: 2px; }
+#create-account .subir-cv a {
+  text-align: left;
+  display: flex;
+  margin: 10px 0; }
+  #create-account .subir-cv a span {
+    font-size: 40px;
+    margin: 0 20px 0 10px;
+    color: #004E64; }
+#create-account .pegar-cv {
+  min-height: 150px; }
 
 @media only screen {
   @-ms-viewport {

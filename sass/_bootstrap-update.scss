@@ -9,21 +9,6 @@ h1, h2, h3, h4, h5, h6{
 
 
 
-.btn-primary{
-	background: $main-color;
-	border-bottom-color: darken($main-color,5%);
-	border-right-color: darken($main-color,5%);
-	border-top-color: lighten($main-color,10%);
-	border-left-color: lighten($main-color,10%);
-	&:hover{
-		background: darken($main-color,10%);
-		border-bottom-color: darken($main-color,15%);
-		border-right-color: darken($main-color,15%);
-		border-top-color: lighten($main-color,20%);
-		border-left-color: lighten($main-color,20%);
-	}
-}
-
 .well {
     background-color: #f7f7f7;
     padding: 20px 25px 30px;
@@ -43,8 +28,12 @@ h1, h2, h3, h4, h5, h6{
 }
 
 a{
-	color: $secondary-color;
+	color: $color2;
 	&:hover{
-		color: darken($secondary-color, 10%);
+		color: darken($color2, 10%);
 	}
 }
+
+
+
+

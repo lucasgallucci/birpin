@@ -1,0 +1,179 @@
+<!doctype html>
+
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="mobileoptimized" content="0" />
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+	<title>Birpin</title>
+	<link rel="stylesheet" href="css/style.css">
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+      <![endif]-->
+  </head>
+  <body id="create-account">
+
+  	<nav class="navbar navbar-default">
+		<div class="container">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#"><img src="imagenes/birpin.svg"></a>
+			</div>
+		</div>
+	</nav>
+
+	<div class="container flow">
+		<div class="row">
+			<div class="col-md-6 col-md-offset-3">
+				<article class="col-md-6 success">
+					<h4>Paso 1</h4>
+					<h6>Datos Personales</h6>
+				</article>
+
+				<article class="col-md-6 active">
+					<h4>Paso 2</h4>
+					<h6>Perfil profesional</h6>
+				</article>
+			</div>
+		</div>
+	</div>
+
+
+  	<div class="container">
+  		<div class="row">
+  			<div class="col-xs-12 col-md-6 col-md-offset-3">
+  				<div class="well">
+	  				<h4 class="text-center">Completa tu Perfil profesional</h4>
+	  				<form>
+	  					<div class="form-group">
+	  						<label for="nombre" class="control-label">Empresa en la que trabajas actualmente</label>
+	  						<input type="text" class="form-control" id="nombre" placeholder="Completa el nombre de la empresa">
+	  					</div>
+
+	   					<div class="form-group">
+	  						<label for="nombre" class="control-label">Nivel Jerárquico</label>
+							<select class="form-control">
+								<option value="">--seleccionar--</option>
+								<option value="1">Presidencia</option>
+								<option value="2">Dirección</option>
+								<option value="3">Gerencia</option>
+								<option value="4">Jefatura - Supervisión</option>
+								<option value="5">Analista Senior</option>
+								<option value="6">Analista semi-Senior</option>
+								<option value="7">Analista junior</option>
+								<option value="8">Profesional</option>
+								<option value="9">Administrativo - Operativo</option>
+							</select>
+	  					</div>
+
+	  					<hr>
+
+	  					<div class="form-group">
+	  						<label>Selecciona áreas de experiencia</label>
+	  						<input class="form-control" placeholder="Escribe las áreas en las que te especializas">
+	  					</div>
+
+						<p class="areas">
+							<span class="label label-default">Diseño Gráfico <span class="glyphicon glyphicon-remove"></span></span>
+							<span class="label label-default">Diseño Multimedial <span class="glyphicon glyphicon-remove"></span></span>
+							<span class="label label-default">Desarrollo Frontend <span class="glyphicon glyphicon-remove"></span></span>
+							<span class="label label-default">Diseño Editorial <span class="glyphicon glyphicon-remove"></span></span>
+							<span class="label label-default">Edición de video <span class="glyphicon glyphicon-remove"></span></span>
+						</p>
+
+						<hr>
+						<div class="form-group">
+	  						<label for="nombre" class="control-label">Rubro de actividad</label>
+	  						<input class="form-control" placeholder="Escribe los rubros en los que tienes experiencia">
+						</div>
+						<p class="areas">
+							<span class="label label-default">Textil <span class="glyphicon glyphicon-remove"></span></span>
+							<span class="label label-default">Digital <span class="glyphicon glyphicon-remove"></span></span>
+							<span class="label label-default">Publicitario <span class="glyphicon glyphicon-remove"></span></span>
+							<span class="label label-default">Editorial <span class="glyphicon glyphicon-remove"></span></span>
+						</p>
+						
+
+						<!-- <div class="form-group subir-cv">
+	  						<label for="nombre" class="control-label">Subí tu curriculum</label>
+	  						
+	  								<div class="radio">
+	  									<label>
+		  									<input type="radio" class="">
+		  									<span class="ion-ios-copy"></span> Copiar y pegar
+	  									</label>
+	  								</div>
+	  								
+	  								<div class="radio">
+	  								
+	  								<label>
+	  									<input type="radio" class="">
+	  									<span class="ion-social-dropbox"></span> Importar de Dropbox
+	  									</label>
+	  								</div>
+	  					
+	  								<div class="radio">
+	  								
+	  								<label>
+	  									<input type="radio" class="">
+	  									<span class="ion-upload"></span> Subir archivo
+	  									</label>
+	  									</div>
+	  								
+	  								<div class="radio">
+	  							
+	  								<label>
+	  									<input type="radio" class="">
+	  									<span class="ion-edit"></span> Asistente de creación de currículum
+	  									</label>
+	  								</div>
+	  							</div>
+
+ -->
+
+
+	  					<div class="form-group">
+	  						<button type="button" class="btn btn-primary btn-lg btn-block"  data-toggle="modal" data-target="#subir-cv">Finalizar y subir CV</button>
+	  					</div>
+  					</form>
+  				</div>
+  			</div>
+  		</div>
+  	</div>
+
+
+  	<div class="modal fade" id="subir-cv" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h5 class="modal-title" id="myModalLabel">Elige un método para subir tu CV</h5>
+      </div>
+      <div class="modal-body">
+	        <a href="" class="btn btn-lg btn-block btn3"><span class="ion-ios-copy"></span> Copiar y pegar</a>
+	        <a href="" class="btn btn-lg btn-block btn3"><span class="ion-social-dropbox"></span> Importar de Dropbox</a>
+	        <a href="" class="btn btn-lg btn-block btn3"><span class="ion-upload"></span> Subir archivo</a>
+	        <a href="" class="btn btn-lg btn-block btn3"><span class="ion-edit"></span> Asistente de creación de currículum</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+ 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+  </body>
+  </html>
