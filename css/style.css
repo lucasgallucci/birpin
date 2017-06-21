@@ -327,6 +327,169 @@ body, html {
 #create-account .pegar-cv {
   min-height: 150px; }
 
+#cv h6 {
+  text-transform: uppercase; }
+#cv .datos-personales .form-control {
+  border: none;
+  border-radius: 0;
+  border-bottom: 1px solid #ccc;
+  font-size: 18px;
+  font-weight: 300;
+  box-shadow: none;
+  padding: 0;
+  height: 36px; }
+#cv .datos-personales label {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 300; }
+
+#buscador {
+  position: relative; }
+  #buscador .resultados {
+    position: absolute;
+    width: 100%;
+    border: 1px solid #ddd;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
+    padding: 10px;
+    background: white; }
+    #buscador .resultados ul {
+      list-style: none;
+      padding: 0; }
+      #buscador .resultados ul li {
+        border-bottom: 1px solid #ddd;
+        padding: 7px 0; }
+        #buscador .resultados ul li.titulo {
+          border: none;
+          padding: 5px 0; }
+          #buscador .resultados ul li.titulo h6 {
+            text-transform: uppercase; }
+            #buscador .resultados ul li.titulo h6 small {
+              float: right; }
+        #buscador .resultados ul li:last-child {
+          border: none; }
+        #buscador .resultados ul li article {
+          display: flex;
+          align-items: center; }
+          #buscador .resultados ul li article .img {
+            flex: 1;
+            margin-right: 15px; }
+            #buscador .resultados ul li article .img img {
+              max-width: 100%; }
+          #buscador .resultados ul li article .info {
+            flex: 10; }
+            #buscador .resultados ul li article .info h4 {
+              margin: 0;
+              font-size: 15px;
+              font-weight: 400;
+              margin-bottom: 2px; }
+            #buscador .resultados ul li article .info h5 {
+              margin: 0;
+              color: #4f6177;
+              font-size: 13px;
+              font-weight: 300;
+              margin-top: 2px; }
+
+#resultado-busqueda {
+  background: #f7f7f7; }
+  #resultado-busqueda .well {
+    background: white;
+    padding: 15px;
+    margin: 0;
+    overflow: auto;
+    position: relative; }
+  #resultado-busqueda .separador {
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 10px;
+    padding-bottom: 10px; }
+  #resultado-busqueda h3 {
+    margin: 30px 0; }
+  #resultado-busqueda .filtros article {
+    margin-bottom: 30px; }
+    #resultado-busqueda .filtros article h6 {
+      text-transform: uppercase;
+      background: #004e64;
+      color: white;
+      padding: 5px;
+      font-weight: 400; }
+    #resultado-busqueda .filtros article ul {
+      list-style: none;
+      padding: 0; }
+      #resultado-busqueda .filtros article ul li {
+        text-transform: uppercase;
+        border-bottom: 1px solid #d0d0d0;
+        padding: 5px 0;
+        font-size: 11px; }
+        #resultado-busqueda .filtros article ul li small {
+          float: right; }
+  #resultado-busqueda .filtros-activos .label-default {
+    font-size: 13px;
+    font-weight: 300;
+    padding: 5px 5px 5px 10px;
+    margin-right: 7px;
+    margin-bottom: 10px;
+    display: inline-block; }
+    #resultado-busqueda .filtros-activos .label-default span {
+      margin: 0 5px;
+      font-size: 11px;
+      position: relative;
+      top: 1px; }
+  #resultado-busqueda .ordenar p {
+    margin: 5px 0 0 0; }
+  #resultado-busqueda .ordenar form {
+    text-align: right; }
+    #resultado-busqueda .ordenar form label {
+      font-weight: 400;
+      color: #647a95; }
+    #resultado-busqueda .ordenar form select {
+      border: none;
+      background: none;
+      box-shadow: none;
+      position: relative;
+      top: -2px;
+      font-weight: 700; }
+  #resultado-busqueda h2 {
+    color: #004E64;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 25px;
+    border-bottom: 1px #004E64 solid; }
+  #resultado-busqueda .oferta-laboral {
+    margin-bottom: 10px; }
+    #resultado-busqueda .oferta-laboral .well {
+      background: white;
+      padding: 15px;
+      margin: 0;
+      overflow: auto;
+      position: relative; }
+      #resultado-busqueda .oferta-laboral .well .empresa {
+        display: flex; }
+        #resultado-busqueda .oferta-laboral .well .empresa .img {
+          flex: 1;
+          margin-right: 10px; }
+        #resultado-busqueda .oferta-laboral .well .empresa .nombre {
+          flex: 15; }
+          #resultado-busqueda .oferta-laboral .well .empresa .nombre .compatibilidad {
+            position: absolute;
+            float: right;
+            top: 10px;
+            right: 10px; }
+            #resultado-busqueda .oferta-laboral .well .empresa .nombre .compatibilidad span {
+              color: #666; }
+          #resultado-busqueda .oferta-laboral .well .empresa .nombre h4, #resultado-busqueda .oferta-laboral .well .empresa .nombre h5 {
+            margin: 0; }
+          #resultado-busqueda .oferta-laboral .well .empresa .nombre h4 {
+            text-transform: none; }
+          #resultado-busqueda .oferta-laboral .well .empresa .nombre h4 {
+            margin-bottom: 5px; }
+          #resultado-busqueda .oferta-laboral .well .empresa .nombre small {
+            font-size: 11px;
+            color: #1E91D6;
+            text-transform: lowercase; }
+      #resultado-busqueda .oferta-laboral .well .zona {
+        display: inline-block; }
+      #resultado-busqueda .oferta-laboral .well .aplicar {
+        float: right; }
+
 @media only screen {
   @-ms-viewport {
     width: device-width; } }

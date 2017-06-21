@@ -1,0 +1,27 @@
+#cv{
+	h6{
+		text-transform: uppercase;
+	}
+	.datos-personales{
+		.form-control{
+			border: none;
+			border-radius: 0;
+			border-bottom: 1px solid #ccc;
+			font-size: 18px;
+			font-weight: 300;
+			box-shadow: none;
+			padding: 0;
+			height: 36px;
+		}
+
+		label{
+			text-transform: uppercase;
+			font-size: 12px;
+			font-weight: 300;
+		}
+	}
+
+	.datos-academicos{
+		
+	}
+}

@@ -6,12 +6,16 @@
 @import "theme";
 @import "buttons";
 @import "navbar";
-@import "wall";
+@import "wall"; 
 @import "footer";
 @import "modal";
 
 @import "screen-login";
 @import "create-account";
+
+@import "cv";
+@import "buscador";
+@import "resultado-busqueda"; 
 
 @media only screen {
     @-ms-viewport { width: device-width; }
