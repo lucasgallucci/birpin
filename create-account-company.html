@@ -1,0 +1,165 @@
+<!doctype html>
+
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="mobileoptimized" content="0" />
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+	<title>Birpin</title>
+	<link rel="stylesheet" href="css/style.css">
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+      <![endif]-->
+  </head>
+  <body id="create-account">
+
+  	<nav class="navbar navbar-default">
+		<div class="container">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#"><img src="imagenes/birpin.svg"></a>
+			</div>
+		</div>
+	</nav>
+
+	<div class="container flow">
+		<div class="row">
+			<div class="col-md-6 col-md-offset-3">
+				<article class="col-md-4 success">
+					<h4>Paso 1</h4>
+					<h6>Datos Personales</h6>
+				</article>
+
+				<article class="col-md-4 active">
+					<h4>Paso 2</h4>
+					<h6>Perfil de Empresa</h6>
+				</article>
+
+				<article class="col-md-4">
+					<h4>Paso 3</h4>
+					<h6>Perfil profesional</h6>
+				</article>
+			</div>
+		</div>
+	</div>
+
+
+  	<div class="container">
+  		<div class="row">
+  			<div class="col-xs-12 col-md-6 col-md-offset-3">
+  				<div class="well">
+  				<h4 class="col-sm-offset-3 col-sm-9">Completa tus datos personales</h4>
+  				<form class="form-horizontal">
+  					<div class="form-group">
+  						<label for="nombre" class="col-sm-3 control-label">Razón social</label>
+  						<div class="col-sm-9">
+  							<input type="text" class="form-control" id="nombre" placeholder="Nombre de la empresa">
+  						</div>
+  					</div>
+  					<div class="form-group">
+  						<label for="apellido" class="col-sm-3 control-label">Nombre comercial</label>
+  						<div class="col-sm-9">
+  							<input type="text" class="form-control" id="apellido" placeholder="Nombre comercial">
+  						</div>
+  					</div>
+
+  					<div class="form-group">
+  						<label for="email" class="col-sm-3 control-label">Cuit</label>
+  						<div class="col-sm-9">
+  							<input type="number" class="form-control" id="email" placeholder="Número de cuit de la empresa">
+  						</div>
+  					</div>
+
+  					<div class="form-group">
+  						<label for="email2" class="col-sm-3 control-label">Repetir Email</label>
+  						<div class="col-sm-9">
+  							<select class="form-control" id="rubro_id" name="rubro_id" data-fv-field="rubro_id">
+                  <option value="">--seleccionar--</option>
+                  <option value="1">Ex-AFJP</option>
+                  <option value="2">Agro-Industria</option>
+                  <option value="3">Agropecuaria</option>
+                  <option value="4">Alimenticia</option>
+                  <option value="5">Arquitectura / Construcción</option>
+                  <option value="6">Artesanal</option>
+                  <option value="7">Automotriz</option>
+                  <option value="8">Banca / Financiera</option>
+                  <option value="9">Biotecnología</option>
+                  <option value="10">Consultoría</option>
+                  <option value="11">Consumo masivo</option>
+                  <option value="12">Correo</option>
+                  <option value="13">Defensa / Seguridad</option>
+                  <option value="14">Diseño</option>
+                  <option value="15">Editorial</option>
+                  <option value="16">Educación</option>
+                  <option value="17">Energía</option>
+                  <option value="18">Entretenimiento</option>
+                  <option value="19">Farmacéutica</option>
+                  <option value="20">Forestal</option>
+                  <option value="21">Ganadería</option>
+                  <option value="22">Gastronomía</option>
+                  <option value="23">Gobierno</option>
+                  <option value="24">Higiene y Perfumería</option>
+                  <option value="25">Imprenta</option>
+                  <option value="26">Información e Investigación</option>
+                  <option value="27">Informática / Tecnología</option>
+                  <option value="28">Internet</option>
+                  <option value="29">Jurídica</option>
+                  <option value="30">Laboratorio</option>
+                  <option value="31">Manufactura</option>
+                  <option value="32">Medios</option>
+                  <option value="33">Minería / Petróleo / Gas</option>
+                  <option value="34">Organizaciones No Gubernamentales</option>
+                  <option value="35">Otra</option>
+                  <option value="36">Papelera</option>
+                  <option value="37">Pesca</option>
+                  <option value="38">Petroquímica</option>
+                  <option value="39">Plásticos</option>
+                  <option value="40">Publicidad / Marketing / RRPP</option>
+                  <option value="41">Química</option>
+                  <option value="42">Retail / Comercio</option>
+                  <option value="43">Salud</option>
+                  <option value="44">Seguros</option>
+                  <option value="45">Servicios</option>
+                  <option value="46">Siderurgia</option>
+                  <option value="47">Sin experiencia laboral</option>
+                  <option value="48">Supermercado / Hipermercado</option>
+                  <option value="49">Tabacalera</option>
+                  <option value="50">Telecomunicaciones</option>
+                  <option value="51">Textil</option>
+                  <option value="52">Transportadora</option>
+                  <option value="53">Transporte</option>
+                  <option value="54">Turismo / Hotelería</option>
+                </select>
+  						</div>
+  					</div>
+  					
+  					<div class="form-group">
+  						<label for="password" class="col-sm-3 control-label">Descripción</label>
+  						<div class="col-sm-9">
+  							<input type="password" class="form-control" id="password" placeholder="Elige una contraseña">
+  						</div>
+  					</div>
+
+  					<div class="form-group">
+  						<div class="col-sm-offset-3 col-sm-9">
+  							<button type="submit" class="btn btn-primary">Continuar</button>
+  						</div>
+  					</div>
+  				</form>
+  				</div>
+  			</div>
+  		</div>
+  	</div>
+  </body>
+  </html>
