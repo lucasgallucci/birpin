@@ -34,6 +34,12 @@ a, p, input, button, span, label, .btn, .form-group, .form-control {
 .shadow {
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5); }
 
+.margin-top-30 {
+  margin-top: 30px; }
+
+.margin-top-15 {
+  margin-top: 15px; }
+
 .btn-primary {
   background: #FF9900;
   border-top: #ffa31a;
@@ -243,6 +249,77 @@ footer {
       color: white;
       font-weight: 300; }
 
+#dashboard-empresa .creditos {
+  padding-bottom: 15px; }
+  #dashboard-empresa .creditos h5 {
+    margin: 0; }
+  #dashboard-empresa .creditos .big {
+    font-size: 50px;
+    font-weight: 300;
+    margin: 5px 0; }
+  #dashboard-empresa .creditos hr {
+    margin: 10px 0 15px 0; }
+#dashboard-empresa .numeros {
+  display: flex;
+  align-items: stretch; }
+  #dashboard-empresa .numeros .dato {
+    flex: 1;
+    padding: 10px; }
+
+.listado-postulantes {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch; }
+  .listado-postulantes .postulante {
+    margin-bottom: 10px;
+    padding: 10px;
+    min-width: 280px; }
+
+.tile-postulante {
+  text-align: center;
+  border: 1px #ddd solid;
+  border-radius: 5px;
+  padding: 10px;
+  position: relative; }
+  .tile-postulante .fav {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    font-size: 20px;
+    color: #ddd; }
+  .tile-postulante img {
+    width: 80px;
+    height: 80px;
+    border: 3px solid white, 1px solid #666;
+    margin: auto; }
+  .tile-postulante .info {
+    text-align: left; }
+
+.timeline {
+  padding: 0;
+  display: flex;
+  list-style: none; }
+  .timeline li {
+    flex: 1;
+    text-align: center; }
+    .timeline li ul {
+      padding: 0;
+      list-style: none; }
+      .timeline li ul li {
+        margin: 10px 0;
+        position: relative; }
+        .timeline li ul li .postulante {
+          position: absolute;
+          width: 250px;
+          display: none;
+          opacity: 0;
+          transition: 1;
+          background: white;
+          z-index: 999; }
+        .timeline li ul li:hover .postulante {
+          display: block;
+          opacity: 1; }
+
 body, html {
   height: 100%; }
 
@@ -326,6 +403,101 @@ body, html {
     color: #004E64; }
 #create-account .pegar-cv {
   min-height: 150px; }
+
+.table-list .table {
+  padding: 0;
+  background: white; }
+  .table-list .table ul {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    list-style: none;
+    padding: 5px;
+    margin: 0;
+    border-top: 1px solid #ededed;
+    transition: .5s; }
+    .table-list .table ul:first-child {
+      align-items: center; }
+    .table-list .table ul li {
+      flex: 2;
+      padding: 3px;
+      text-align: center; }
+      .table-list .table ul li.large {
+        flex: 5;
+        text-align: left; }
+      .table-list .table ul li p {
+        margin: 0; }
+        .table-list .table ul li p small {
+          font-size: 10px;
+          color: #aaa;
+          margin-right: 3px; }
+    .table-list .table ul.title {
+      background: #1E91D6;
+      padding-left: 10px; }
+      .table-list .table ul.title li p {
+        font-weight: 300;
+        font-size: 12px;
+        text-transform: uppercase;
+        color: white; }
+      .table-list .table ul.title li span {
+        display: inline-block;
+        margin-left: 10px; }
+    .table-list .table ul.total {
+      padding-left: 10px;
+      background: #efefef !important;
+      border-bottom: 1px solid #e0e0e0; }
+    .table-list .table ul.general {
+      padding-left: 10px;
+      background: white;
+      border-top: 1px solid white; }
+    .table-list .table ul.level2 li:first-child p {
+      padding-left: 30px; }
+    .table-list .table ul.level3 li:first-child p {
+      padding-left: 60px; }
+  .table-list .table.with-options ul li:last-child {
+    flex: 1; }
+  .table-list .table.with-options ul li .options {
+    position: relative;
+    display: block; }
+    .table-list .table.with-options ul li .options .menu {
+      position: absolute;
+      padding: 5px 10px;
+      z-index: 10;
+      transform: translate(-50%);
+      margin-left: 50%;
+      border-radius: 4px;
+      top: 30px;
+      min-width: 100px;
+      background: white;
+      border: 1px solid #dedede; }
+      .table-list .table.with-options ul li .options .menu:after {
+        content: "";
+        display: inline-block;
+        width: 15px;
+        height: 15px;
+        background: white;
+        position: absolute;
+        top: -3px;
+        left: 50%;
+        transform: rotate(45deg) translatex(-50%);
+        border-top: 1px solid #dedede;
+        border-left: 1px solid #dedede; }
+      .table-list .table.with-options ul li .options .menu ul {
+        padding: 0;
+        list-style: none;
+        display: block;
+        border: none; }
+        .table-list .table.with-options ul li .options .menu ul li {
+          padding: 5px 0;
+          background: white;
+          display: block; }
+  .table-list .table.select ul:not(.title):hover {
+    background: #e1f5fe;
+    cursor: pointer; }
+.table-list.double {
+  overflow-x: scroll; }
+  .table-list.double .table {
+    width: 200%; }
 
 #cv h6 {
   text-transform: uppercase; }
