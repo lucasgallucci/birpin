@@ -281,6 +281,10 @@ footer {
   border-radius: 5px;
   padding: 10px;
   position: relative; }
+  .tile-postulante h4, .tile-postulante p {
+    margin: 1px 0; }
+  .tile-postulante h4 {
+    margin-top: 10px; }
   .tile-postulante .fav {
     position: absolute;
     top: 5px;
@@ -294,6 +298,89 @@ footer {
     margin: auto; }
   .tile-postulante .info {
     text-align: left; }
+    .tile-postulante .info p {
+      font-size: 12px; }
+
+.timeline2 {
+  padding: 0;
+  display: flex;
+  list-style: none; }
+  .timeline2 li {
+    flex: 1;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: relative; }
+    .timeline2 li .postulante {
+      position: absolute;
+      width: 500px;
+      display: none;
+      opacity: 0;
+      transition: 1s;
+      background: white;
+      z-index: 999;
+      transform: translatey(100%);
+      bottom: 0px;
+      border: 1px solid #ddd; }
+      .timeline2 li .postulante:before {
+        width: 15px;
+        height: 15px;
+        content: "";
+        display: inline-block;
+        transform: rotate(45deg) translateX(-50%);
+        top: -2px;
+        z-index: 999;
+        background: white;
+        border-top: 1px solid #cdcdcd;
+        border-left: 1px solid #cdcdcd;
+        position: absolute; }
+      .timeline2 li .postulante .historia, .timeline2 li .postulante .tile-postulante {
+        width: 50%;
+        border: none;
+        box-sizing: border-box;
+        float: left;
+        height: 100%; }
+      .timeline2 li .postulante .tile-postulante {
+        border-right: 1px solid #cdcdcd; }
+      .timeline2 li .postulante .historia {
+        text-align: left;
+        padding: 15px;
+        font-size: 12px; }
+        .timeline2 li .postulante .historia .historial {
+          padding: 0; }
+          .timeline2 li .postulante .historia .historial li {
+            justify-content: left;
+            height: auto; }
+    .timeline2 li:hover .postulante {
+      display: block;
+      opacity: 1; }
+  .timeline2.flow {
+    position: relative;
+    border-bottom: 1px solid #bbb;
+    padding: 10px 0;
+    margin-bottom: 10px 0; }
+    .timeline2.flow:after {
+      content: "";
+      border-top: 1px dashed #dcdcdc;
+      position: absolute;
+      width: 100%;
+      top: 50%;
+      z-index: -1; }
+    .timeline2.flow img {
+      border: 3px solid white;
+      position: relative;
+      box-shadow: 0 0 2px #ccc; }
+    .timeline2.flow .pin {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background: #999;
+      display: inline-block;
+      font-size: 14px;
+      color: white; }
+      .timeline2.flow .pin.ok {
+        background: green; }
 
 .timeline {
   padding: 0;
@@ -307,18 +394,68 @@ footer {
       list-style: none; }
       .timeline li ul li {
         margin: 10px 0;
-        position: relative; }
+        position: relative;
+        height: 40px; }
+        .timeline li ul li img {
+          border: 2px solid white; }
         .timeline li ul li .postulante {
           position: absolute;
-          width: 250px;
-          display: none;
+          width: 500px;
+          display: flex none;
           opacity: 0;
-          transition: 1;
+          transition: 1s;
           background: white;
-          z-index: 999; }
+          z-index: 999;
+          transform: translateX(-50%) translatey(100%);
+          margin-left: 50%;
+          bottom: 0px;
+          border: 1px solid #ddd; }
+          .timeline li ul li .postulante:before {
+            width: 15px;
+            height: 15px;
+            content: "";
+            display: inline-block;
+            transform: rotate(45deg) translateX(-50%);
+            top: -2px;
+            z-index: 999;
+            background: white;
+            border-top: 1px solid #cdcdcd;
+            border-left: 1px solid #cdcdcd;
+            position: absolute; }
+          .timeline li ul li .postulante .historia, .timeline li ul li .postulante .tile-postulante {
+            width: 50%;
+            border: none;
+            box-sizing: border-box;
+            float: left;
+            height: 100%; }
+          .timeline li ul li .postulante .tile-postulante {
+            border-right: 1px solid #cdcdcd; }
+          .timeline li ul li .postulante .historia {
+            text-align: left;
+            padding: 15px;
+            font-size: 12px; }
+            .timeline li ul li .postulante .historia .historial li {
+              text-align: left;
+              height: auto; }
         .timeline li ul li:hover .postulante {
           display: block;
           opacity: 1; }
+
+.modal-cv h3 {
+  font-size: 14px;
+  border-bottom: 1px solid #ddd;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding-bottom: 5px; }
+.modal-cv ul li {
+  margin-bottom: 20px; }
+  .modal-cv ul li h6, .modal-cv ul li h4, .modal-cv ul li h5 {
+    margin: 2px 0; }
+  .modal-cv ul li h5, .modal-cv ul li h6 {
+    font-weight: 400; }
+  .modal-cv ul li h4 {
+    font-size: 15px;
+    text-transform: uppercase; }
 
 body, html {
   height: 100%; }
@@ -665,6 +802,34 @@ body, html {
         display: inline-block; }
       #resultado-busqueda .oferta-laboral .well .aplicar {
         float: right; }
+
+#anuncio aside .social {
+  display: flex;
+  list-style: none;
+  padding: 0; }
+  #anuncio aside .social li {
+    margin-right: 20px; }
+    #anuncio aside .social li span {
+      background: #FF9900;
+      color: white;
+      display: inline-block;
+      width: 30px;
+      height: 30px;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      border-radius: 50%;
+      font-size: 18px; }
+#anuncio aside .enviar {
+  text-align: left;
+  line-height: 18px; }
+  #anuncio aside .enviar span {
+    font-size: 18px;
+    margin-right: 10px;
+    color: #aaa;
+    position: relative;
+    top: 2px;
+    padding-bottom: 40px; }
 
 @media only screen {
   @-ms-viewport {
