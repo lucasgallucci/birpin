@@ -21,5 +21,58 @@
 
 	.navbar-right{
 		margin-top: 8px;
+		.user{
+			position: relative;
+			img{
+				width: 35px;
+				height: 35px;
+				margin-right: 5px;
+			}
+			a{
+				color: white;
+			}
+			.menu-user{
+				position: absolute;
+				border: 1px solid #cdcdcd;
+				padding: 10px;
+				border-radius: 5px;
+				background: white;
+				transform: translatex(-50%);
+			    left: 50%;
+			    margin-top: 10px;
+			    &:before{
+			    	content: "";
+				    width: 10px;
+				    height: 10px;
+				    border-top: 1px solid #cdcdcd;
+				    border-left: 1px solid #cdcdcd;
+				    background: white;
+				    position: absolute;
+				    top: -6px;
+				    left: 50%;
+				    transform: translateX(-50%) rotate(45deg);
+			    }
+				ul{
+					list-style: none;
+					padding: 0;
+					min-width: 180px;
+					li{
+						padding: 5px 30px;
+						font-size: 12px;
+						&.divider{
+							border-top: 1px solid #dedede;
+							height: 0;
+							padding: 0;
+							margin: 4px 0;
+						}
+
+						.page-brand{
+							max-width: 30px;
+							margin-right: 5px;
+						}
+					}
+				}
+			}
+		}
 	}
 }
