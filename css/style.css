@@ -539,6 +539,13 @@ body, html {
         font-size: 25px; }
   #screen-login2 .btn-info {
     background: #177E89; }
+  #screen-login2 input.error {
+    border: 1px solid #c62828; }
+  #screen-login2 small {
+    font-size: 11px;
+    color: #c62828; }
+    #screen-login2 small a {
+      font-size: 11px; }
 
 #create-account .flow article {
   margin-top: 30px;

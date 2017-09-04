@@ -53,4 +53,18 @@ body, html{
 	.btn-info{
 		background: #177E89;
 	}
+
+	input{
+		&.error{
+			border: 1px solid #c62828;
+		}	
+	}
+
+	small{
+		font-size: 11px;
+		color: #c62828;
+		a{
+			font-size: 11px;
+		}
+	}
 }
