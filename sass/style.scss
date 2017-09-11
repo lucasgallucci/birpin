@@ -4,6 +4,7 @@
 @import "vars";
 @import "bootstrap-update";
 @import "theme";
+@import "componentes";
 @import "buttons";
 @import "navbar";
 @import "wall"; 
@@ -20,6 +21,7 @@
 @import "resultado-busqueda"; 
 
 @import "anuncio"; 
+@import "timeline"; 
 
 @media only screen {
     @-ms-viewport { width: device-width; }
@@ -98,4 +100,11 @@ header{
 	    	padding: 0;
 	    }
 	}
+}
+
+.margintop20{
+	margin-top: 20px;
+}
+.clearfix{
+	overflow: auto;
 }

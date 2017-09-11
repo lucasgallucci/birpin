@@ -9,7 +9,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Rubik"; }
 
 .well {
-  background-color: #f7f7f7;
+  background-color: #fff;
   padding: 20px 25px 30px;
   margin: 0 auto 25px;
   -moz-border-radius: 2px;
@@ -39,6 +39,183 @@ a, p, input, button, span, label, .btn, .form-group, .form-control {
 
 .margin-top-15 {
   margin-top: 15px; }
+
+body {
+  background: #E9EBEE; }
+
+.oferta-laboral {
+  margin-bottom: 10px; }
+  .oferta-laboral .well {
+    background: white;
+    padding: 15px;
+    margin: 0;
+    overflow: auto;
+    position: relative; }
+    .oferta-laboral .well .empresa {
+      display: flex; }
+      .oferta-laboral .well .empresa .img {
+        flex: 1;
+        margin-right: 10px; }
+      .oferta-laboral .well .empresa .nombre {
+        flex: 15; }
+        .oferta-laboral .well .empresa .nombre .compatibilidad {
+          position: absolute;
+          float: right;
+          top: 10px;
+          right: 10px; }
+          .oferta-laboral .well .empresa .nombre .compatibilidad span {
+            color: #666; }
+        .oferta-laboral .well .empresa .nombre h4, .oferta-laboral .well .empresa .nombre h5 {
+          margin: 0; }
+        .oferta-laboral .well .empresa .nombre h4 {
+          text-transform: none; }
+        .oferta-laboral .well .empresa .nombre h4 {
+          margin-bottom: 5px; }
+        .oferta-laboral .well .empresa .nombre small {
+          font-size: 11px;
+          color: #1E91D6;
+          text-transform: lowercase; }
+    .oferta-laboral .well .zona {
+      display: inline-block; }
+    .oferta-laboral .well .aplicar {
+      float: right; }
+  .oferta-laboral.post hr {
+    margin: 10px 0; }
+  .oferta-laboral.post .descripcion {
+    max-height: none;
+    margin-bottom: 20px; }
+
+.user-profile {
+  background: white;
+  box-sizing: border-box;
+  padding: 15px 10px;
+  text-align: center; }
+  .user-profile img {
+    max-width: 80px;
+    margin: auto;
+    margin-bottom: 10px; }
+  .user-profile h4 {
+    font-weight: 400;
+    font-size: 16px;
+    margin: 3px 0; }
+  .user-profile h6 {
+    margin: 3px 0;
+    margin-bottom: 10px; }
+  .user-profile a {
+    margin: 10px 0 0 0; }
+
+.user-profile-min {
+  display: flex;
+  padding-bottom: 10px;
+  margin-bottom: 10px; }
+  .user-profile-min .foto {
+    flex: 1;
+    padding-right: 10px; }
+  .user-profile-min .info {
+    flex: 5; }
+    .user-profile-min .info h4 {
+      font-size: 14px;
+      font-weight: 300;
+      margin: 0;
+      line-height: 14px; }
+    .user-profile-min .info h5 {
+      margin: 0;
+      font-size: 12px; }
+    .user-profile-min .info small {
+      font-size: 11px;
+      color: #a0a0a0; }
+    .user-profile-min .info .btn-link {
+      background: none;
+      color: #FF9900;
+      text-decoration: underline;
+      padding: 0;
+      display: block;
+      text-align: left; }
+  .user-profile-min.well {
+    padding: 5px; }
+
+aside {
+  margin-top: 20px; }
+  aside .well {
+    padding: 10px; }
+    aside .well h6 {
+      text-transform: uppercase;
+      border-bottom: 1px solid #cdcdcd;
+      padding-bottom: 5px;
+      margin-bottom: 15px; }
+
+.share {
+  padding: 0;
+  position: relative;
+  display: inline-block; }
+  .share li {
+    display: inline-block;
+    margin-right: 0px;
+    transition: 1s; }
+    .share li a {
+      transition: 0.5s;
+      width: 25px;
+      height: 25px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      font-size: 20px;
+      justify-content: center;
+      background: rgba(255, 255, 255, 0.7);
+      color: #3b4858;
+      border: 1px solid #FF9900; }
+      .share li a:hover {
+        background: white;
+        transform: scale(1.1); }
+    .share li.share-btn a, .share li.like-btn a {
+      background: #FF9900;
+      color: white; }
+
+.insignia {
+  padding: 30px 15px 20px !important;
+  position: relative; }
+  .insignia .fav {
+    position: absolute;
+    right: 10px;
+    top: 10px; }
+    .insignia .fav span {
+      font-size: 18px;
+      color: gold;
+      position: relative; }
+      .insignia .fav span .fav-popover {
+        background: gold;
+        padding: 10px;
+        display: inline-block; }
+  .insignia .profile-pic {
+    max-width: 100px;
+    margin: auto;
+    border: 3px solid white;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.5); }
+  .insignia h5 {
+    font-weight: 300; }
+  .insignia .contactos {
+    display: flex;
+    padding: 0;
+    justify-content: center;
+    list-style: none;
+    margin-top: 20px; }
+    .insignia .contactos li {
+      padding: 0 20px; }
+      .insignia .contactos li:first-child {
+        border-right: 1px solid #cacaca; }
+      .insignia .contactos li .numero {
+        display: block;
+        font-size: 20px;
+        font-weight: 300;
+        text-align: center; }
+  .insignia .busqueda .circle {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 3px; }
+    .insignia .busqueda .circle.activa {
+      background: limegreen; }
 
 .btn-primary {
   background: #FF9900;
@@ -816,42 +993,6 @@ body, html {
     font-weight: 400;
     font-size: 25px;
     border-bottom: 1px #004E64 solid; }
-  #resultado-busqueda .oferta-laboral {
-    margin-bottom: 10px; }
-    #resultado-busqueda .oferta-laboral .well {
-      background: white;
-      padding: 15px;
-      margin: 0;
-      overflow: auto;
-      position: relative; }
-      #resultado-busqueda .oferta-laboral .well .empresa {
-        display: flex; }
-        #resultado-busqueda .oferta-laboral .well .empresa .img {
-          flex: 1;
-          margin-right: 10px; }
-        #resultado-busqueda .oferta-laboral .well .empresa .nombre {
-          flex: 15; }
-          #resultado-busqueda .oferta-laboral .well .empresa .nombre .compatibilidad {
-            position: absolute;
-            float: right;
-            top: 10px;
-            right: 10px; }
-            #resultado-busqueda .oferta-laboral .well .empresa .nombre .compatibilidad span {
-              color: #666; }
-          #resultado-busqueda .oferta-laboral .well .empresa .nombre h4, #resultado-busqueda .oferta-laboral .well .empresa .nombre h5 {
-            margin: 0; }
-          #resultado-busqueda .oferta-laboral .well .empresa .nombre h4 {
-            text-transform: none; }
-          #resultado-busqueda .oferta-laboral .well .empresa .nombre h4 {
-            margin-bottom: 5px; }
-          #resultado-busqueda .oferta-laboral .well .empresa .nombre small {
-            font-size: 11px;
-            color: #1E91D6;
-            text-transform: lowercase; }
-      #resultado-busqueda .oferta-laboral .well .zona {
-        display: inline-block; }
-      #resultado-busqueda .oferta-laboral .well .aplicar {
-        float: right; }
 
 #anuncio aside .social {
   display: flex;
@@ -880,6 +1021,94 @@ body, html {
     position: relative;
     top: 2px;
     padding-bottom: 40px; }
+
+#timeline .create {
+  margin-top: 20px;
+  padding: 1px 20px; }
+  #timeline .create .create-post {
+    padding: 0;
+    display: inline-block; }
+    #timeline .create .create-post li {
+      list-style: none;
+      display: inline-block;
+      margin-right: 10px; }
+      #timeline .create .create-post li span {
+        width: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 30px;
+        border-radius: 50%;
+        border: 1px solid #dcdcdc;
+        font-size: 20px;
+        background: white; }
+  #timeline .create .form-group {
+    margin: 0; }
+  #timeline .create textarea {
+    margin: 10px 0 10px 0;
+    font-size: 16px;
+    font-weight: 300;
+    padding: 15px; }
+  #timeline .create .post {
+    float: right; }
+#timeline article .why {
+  color: #aaa;
+  font-weight: 300;
+  text-transform: uppercase;
+  display: block;
+  text-align: left;
+  margin-bottom: 5px; }
+
+.recomendados-amigos {
+  display: flex; }
+  .recomendados-amigos article {
+    margin-right: 20px;
+    min-width: 172px; }
+
+.comments .comment-data {
+  display: flex; }
+  .comments .comment-data .img {
+    flex: 1; }
+    .comments .comment-data .img img {
+      width: 100%; }
+  .comments .comment-data .nombre {
+    flex: 10;
+    padding: 0 10px; }
+    .comments .comment-data .nombre h5 {
+      margin: 2px 0; }
+    .comments .comment-data .nombre small {
+      color: #aaa;
+      margin-bottom: 10px;
+      display: block; }
+  .comments .comment-data .actions small {
+    display: inline-block;
+    color: #FF9900; }
+
+.notification {
+  margin-bottom: 30px; }
+
+.skills span {
+  border: 1px solid #aeaeae;
+  padding: 8px;
+  display: inline-block;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  border-radius: 3px; }
+.skills .s1 {
+  font-size: 22px; }
+.skills .s2 {
+  font-size: 18px; }
+
+/* MURO */
+.menu-lateral {
+  padding: 0;
+  list-style: none; }
+  .menu-lateral li {
+    margin: 10px 0;
+    padding: 5px; }
+    .menu-lateral li.selected {
+      border: 1px solid #d4d4d4;
+      background: rgba(255, 255, 255, 0.5); }
 
 @media only screen {
   @-ms-viewport {
@@ -941,5 +1170,11 @@ header {
       min-width: 1px;
       border-left: 1px solid #ccc;
       padding: 0; }
+
+.margintop20 {
+  margin-top: 20px; }
+
+.clearfix {
+  overflow: auto; }
 
 /*# sourceMappingURL=style.css.map */
