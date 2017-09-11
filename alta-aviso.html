@@ -1,0 +1,185 @@
+<!doctype html>
+
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="mobileoptimized" content="0" />
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+	<title>Birpin</title>
+	<link rel="stylesheet" href="css/style.css">
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body id="timeline">
+	<nav class="navbar navbar-default">
+		<div class="container">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#"><img src="imagenes/birpin.svg"></a>
+			</div>
+
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<!--
+				<form class="navbar-form navbar-left buscador">
+					<div class="form-group">
+						<div class="input-group">
+  							<input type="text" class="form-control" placeholder="Buscá empleos, personas, empresas o noticias" aria-describedby="basic-addon2">
+  							<span class="input-group-addon" id="basic-addon2">
+  								<span class="glyphicon glyphicon-search"></span>
+  							</span>
+						</div>
+					</div>
+				</form>
+				-->
+				<div class="nav navbar-nav navbar-right">
+					<a href="" type="button" class="btn btn-default" data-toggle="modal" data-target="#login">Ingresar</a>
+				</div>
+			</div><!-- /.navbar-collapse -->
+		</div><!-- /.container-fluid -->
+	</nav>
+
+	    <div class="container margintop20">
+	        <div class="row">
+	            <div class="col-lg-12">
+				
+					<div class="well">
+					<form role="form" class="form-horizontal" name="frmAltaAviso" method="post" action="do-alta-aviso.php">
+		
+						<legend>Crear nuevo aviso</legend>
+
+						<div class="form-group">
+							<label for="titulo" class="col-sm-3 control-label">Título</label>
+							<div class="col-sm-6">
+								<input type="text" id="titulo" class="form-control" name="titulo" value="" />
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label for="cuerpo" class="col-sm-3 control-label">Descipción</label>
+							<div class="col-sm-6">
+								<textarea id="cuerpo" name="descripción" class="form-control" rows="5"></textarea>
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label for="zona" class="col-sm-3 control-label">Zona</label>
+							<div class="col-sm-6">
+								<select class="form-control" id="zona_id" name="zona_id">
+									<option value="">--seleccionar--</option>
+									<option value="1">Capital Federal</option>
+									<option value="2">GBA Norte</option>
+									<option value="3">GBA Oeste</option>
+									<option value="4">GBA Sur</option>
+									<option value="5">Bs.As. (fuera de GBA)</option>
+									<option value="6">Catamarca</option>
+									<option value="7">Chaco</option>
+									<option value="8">Chubut</option>
+									<option value="9">Córdoba</option>
+									<option value="10">Corrientes</option>
+									<option value="11">Entre Ríos</option>
+									<option value="12">Formosa</option>
+									<option value="13">Jujuy</option>
+									<option value="14">La Pampa</option>
+									<option value="15">La Rioja</option>
+									<option value="16">Mendoza</option>
+									<option value="17">Misiones</option>
+									<option value="18">Neuquén</option>
+									<option value="19">Río Negro</option>
+									<option value="20">Salta</option>
+									<option value="21">San Juan</option>
+									<option value="22">San Luis</option>
+									<option value="23">Santa Cruz</option>
+									<option value="24">Santa Fe</option>
+									<option value="25">Santiago Del Estero</option>
+									<option value="26">Tierra Del Fuego</option>
+									<option value="27">Tucumán</option>
+									<option value="28">Exterior</option>
+								</select>						
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label for="" class="col-sm-3 control-label">Nivel jerárquico</label>
+							<div class="col-sm-6">
+								<select class="form-control" id="nivelj_id" name="nivelj_id">
+									<option value="">--seleccionar--</option>
+									<option value="1">Presidencia</option>
+									<option value="2">Dirección</option>
+									<option value="3">Gerencia</option>
+									<option value="4">Jefatura - Supervisión</option>
+									<option value="5">Analista Senior</option>
+									<option value="6">Analista semi-Senior</option>
+									<option value="7">Analista junior</option>
+									<option value="8">Profesional</option>
+									<option value="9">Administrativo - Operativo</option>
+								</select>
+							</div>
+						</div>
+
+						
+
+						<div class="form-group">
+							<div class="col-md-offset-3 col-sm-6">
+								<input type="checkbox" id="" name="" value="" checked /> Mostrar datos de la empresa
+							</div>
+						</div>
+
+						<div class="form-group">
+							<div class="col-md-offset-3 col-sm-6">
+								<input type="checkbox" id="" name="" value="" checked /> Permitir comentarios en el anuncio
+							</div>
+						</div>
+						
+						<div class="form-group">
+							<div class="col-md-offset-3 col-sm-6">
+								<input type="checkbox" id="" name="" value="" checked /> Activo
+							</div>
+						</div>
+						
+
+						<div class="form-group">
+							<label  for="tipoaviso_id" class="col-sm-3 control-label">Tipo de aviso</label>
+							<div class="col-sm-3">
+								<select class="form-control" id="tipoaviso_id" name="tipoaviso_id">
+									<option value="2" disabled >Premium (debe comprar créditos)</option>
+									<option value="1" >Standard</option>
+								</select>
+							</div>
+							<div class="col-md-6">
+								<a class="btn btn-default btn-lg" href="comprar-creditos.php">Comprar créditos</a>
+							</div>
+
+							<div class="col-xs-12">
+								<hr>
+							</div>
+							
+
+							<div class="form-group">
+							<div class="col-md-offset-3 col-sm-6">
+								<a class="btn btn-primary btn-lg" href="comprar-creditos.php">Publicar</a>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+													
+						
+
+
+</body>
+</html>
