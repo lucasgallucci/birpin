@@ -178,14 +178,22 @@ aside {
     position: absolute;
     right: 10px;
     top: 10px; }
-    .insignia .fav span {
+    .insignia .fav .star {
       font-size: 18px;
       color: gold;
       position: relative; }
-      .insignia .fav span .fav-popover {
-        background: gold;
-        padding: 10px;
-        display: inline-block; }
+    .insignia .fav .fav-popover {
+      padding: 10px;
+      display: none;
+      position: absolute;
+      width: 200px;
+      z-index: 3;
+      transform: translateX(-50%);
+      font-size: 11px;
+      background: white;
+      border: 1px solid #ddd; }
+    .insignia .fav:hover .fav-popover {
+      display: inline-block; }
   .insignia .profile-pic {
     max-width: 100px;
     margin: auto;

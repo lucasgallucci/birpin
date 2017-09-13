@@ -195,14 +195,26 @@ aside{
 		position: absolute;
 		right: 10px;
 		top: 10px;
-		span{
+		.star{
 			font-size: 18px;
 			color: gold;
 			position: relative;
 
+		}	
+		.fav-popover{
+		    padding: 10px;
+		    display: none;
+		    position: absolute;
+		    width: 200px;
+		    z-index: 3;
+		    transform: translateX(-50%);
+		    font-size: 11px;
+		    background: white;
+		    border: 1px solid #ddd;
+		}
+
+		&:hover{
 			.fav-popover{
-				background: gold;
-				padding: 10px;
 				display: inline-block;
 			}
 		}
