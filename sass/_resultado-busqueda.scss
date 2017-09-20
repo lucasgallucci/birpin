@@ -96,4 +96,18 @@
 		font-size: 25px;
 		border-bottom: 1px $color3 solid;
 	}
+
+	.title-search{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		h4{
+			text-transform: uppercase;
+    		font-size: 14px;
+		}
+		.ver-todos{
+			text-transform: uppercase;
+			font-size: 11px;
+		}
+	}
 }
