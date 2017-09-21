@@ -23,15 +23,15 @@
 			}
 		}
 
-		.form-group{
-			margin: 0;
-		}
-
 		textarea{
 			margin: 10px 0 10px 0;
 			font-size: 16px;
 		    font-weight: 300;
 		    padding: 15px;
+		}
+		
+		.form-group{
+			margin: 0;
 		}
 
 		.post{
@@ -57,6 +57,23 @@
 	article{
 		margin-right: 20px;
 		min-width: 172px;
+	}
+}
+
+.skills{
+	span{
+		border: 1px solid #aeaeae;
+		padding: 8px;
+		display: inline-block;
+		margin-right: 5px;
+		margin-bottom: 5px;
+		border-radius: 3px;
+	}
+	.s1{
+		font-size: 22px;
+	}
+	.s2{
+		font-size: 18px;
 	}
 }
 
@@ -99,27 +116,6 @@
 .notification{
 	margin-bottom: 30px;
 }
-
-
-.skills{
-	span{
-		border: 1px solid #aeaeae;
-		padding: 8px;
-		display: inline-block;
-		margin-right: 5px;
-		margin-bottom: 5px;
-		border-radius: 3px;
-	}
-	.s1{
-		font-size: 22px;
-	}
-	.s2{
-		font-size: 18px;
-	}
-}
-
-
-
 
 
 /* MURO */
