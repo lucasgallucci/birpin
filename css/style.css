@@ -912,21 +912,23 @@ body, html {
     width: 100%;
     border: 1px solid #ddd;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
-    padding: 10px;
     background: white; }
     #buscador .resultados ul {
       list-style: none;
       padding: 0; }
       #buscador .resultados ul li {
         border-bottom: 1px solid #ddd;
-        padding: 7px 0; }
+        padding: 7px 10px;
+        transition: .5s; }
         #buscador .resultados ul li.titulo {
-          border: none;
-          padding: 5px 0; }
+          border: none; }
           #buscador .resultados ul li.titulo h6 {
             text-transform: uppercase; }
             #buscador .resultados ul li.titulo h6 small {
               float: right; }
+        #buscador .resultados ul li:hover {
+          cursor: pointer;
+          background: #ededed; }
         #buscador .resultados ul li:last-child {
           border: none; }
         #buscador .resultados ul li article {
@@ -1078,13 +1080,13 @@ body, html {
         border: 1px solid #dcdcdc;
         font-size: 20px;
         background: white; }
-  #timeline .create .form-group {
-    margin: 0; }
   #timeline .create textarea {
     margin: 10px 0 10px 0;
     font-size: 16px;
     font-weight: 300;
     padding: 15px; }
+  #timeline .create .form-group {
+    margin: 0; }
   #timeline .create .post {
     float: right; }
 #timeline article .why {
@@ -1100,6 +1102,18 @@ body, html {
   .recomendados-amigos article {
     margin-right: 20px;
     min-width: 172px; }
+
+.skills span {
+  border: 1px solid #aeaeae;
+  padding: 8px;
+  display: inline-block;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  border-radius: 3px; }
+.skills .s1 {
+  font-size: 22px; }
+.skills .s2 {
+  font-size: 18px; }
 
 .comments .comment-data {
   display: flex; }
@@ -1122,18 +1136,6 @@ body, html {
 
 .notification {
   margin-bottom: 30px; }
-
-.skills span {
-  border: 1px solid #aeaeae;
-  padding: 8px;
-  display: inline-block;
-  margin-right: 5px;
-  margin-bottom: 5px;
-  border-radius: 3px; }
-.skills .s1 {
-  font-size: 22px; }
-.skills .s2 {
-  font-size: 18px; }
 
 /* MURO */
 .menu-lateral {
