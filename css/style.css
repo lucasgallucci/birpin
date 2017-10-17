@@ -244,6 +244,33 @@ aside {
     .insignia .busqueda .circle.activa {
       background: limegreen; }
 
+.tile-postulante {
+  text-align: center;
+  border: 1px #ddd solid;
+  border-radius: 5px;
+  padding: 10px;
+  position: relative;
+  background: white; }
+  .tile-postulante h4, .tile-postulante p {
+    margin: 1px 0; }
+  .tile-postulante h4 {
+    margin-top: 10px; }
+  .tile-postulante .fav {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    font-size: 20px;
+    color: #ddd; }
+  .tile-postulante img {
+    width: 80px;
+    height: 80px;
+    border: 3px solid white, 1px solid #666;
+    margin: auto; }
+  .tile-postulante .info {
+    text-align: left; }
+    .tile-postulante .info p {
+      font-size: 12px; }
+
 .btn-primary {
   background: #FF9900;
   border-top: #ffa31a;
