@@ -12,7 +12,7 @@
 @import "footer";
 @import "modal";
 
-@import "dashboard-empresa";
+
 @import "screen-login";
 @import "create-account";
 @import "tablas";
@@ -25,6 +25,9 @@
 @import "timeline"; 
 
 @import "dashboard-editores"; 
+
+@import "dashboard-empresa"; 
+@import "dashboard-anuncio"; 
 
 @media only screen {
     @-ms-viewport { width: device-width; }
@@ -111,3 +114,67 @@ header{
 .clearfix{
 	overflow: auto;
 }
+
+
+
+.mini-pin{
+	width: 13px;
+	height: 13px;
+	border-radius: 50%;
+	background: #cdcdcd;
+	color: white;
+	display: inline-block;
+	&.ok{
+		background: limegreen;
+	}
+	&.warning{
+		background: gold;
+	}
+	&.out{
+		background: red;
+	}
+
+	&.waiting{ 
+		background: orange;
+	}
+
+	&.action{
+		background: DodgerBlue;
+	}
+}
+
+.semaforo{
+	span{
+		display: inline-block;
+		width: 20px;
+		height: 20px;
+		border-radius: 50%;
+		margin: 0 5px;
+		border: 1px solid white;
+		&.ok{
+			background: darken(limegreen, 25%);
+			&.on{
+				background: limegreen;
+				box-shadow: 0 0 10px limegreen;
+			}
+		}
+
+		&.warning{
+			background: darken(gold, 25%);
+			&.on{
+				background: gold;
+				box-shadow: 0 0 10px gold;
+			}
+		}
+
+		&.out{
+			background: darken(red, 25%);
+			&.on{
+				background: red;
+				box-shadow: 0 0 10px red;
+			}
+		}
+	}
+}
+
+

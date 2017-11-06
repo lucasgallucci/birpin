@@ -65,15 +65,116 @@
 
 			<section class="col-xs-12">
 				<div class="row">
-					<nav class="col-md-3">
-						<ul class="nav nav-pills nav-stacked">
+					<nav class="col-md-12">
+						<ul class="nav nav-tabs" id="myTabs">
 						  <li role="presentation" class="active"><a data-target="postulantes" class="menu">Postulantes <span class="badge">40</span></a></li>
+						  
 						  <li role="presentation"><a class="menu" data-target="recomendados">Recomendados <span class="badge">32</span></a></li>
-						  <li role="presentation"><a class="menu" data-target="timeline">Preseleccionados <span class="badge">6</span></a></li>
+						  
+						  <li role="presentation"><a class="menu" data-target="adquiridos">Perfiles adquiridos <span class="badge">32</span></a></li>
+						  
+						  <li role="presentation"><a class="menu" data-target="preseleccionados">Preseleccionados <span class="badge">32</span></a></li>
+						  
+
+						  <li role="presentation" id="btn-timeline-config"><a class="menu" data-target="timeline-config"><span class=" btn btn-primary btn-xs">Habilitar timeline</span></a></li>
+						
+						  
+						  <li role="presentation" id="btn-timeline" style="display:none"><a class="menu" data-target="timeline">En Proceso <span class="badge">6</span></a></li>
 						</ul>
 					</nav>
 
-					<div class="col-md-9">
+					<div class="col-md-12">
+
+						<div class="panel" id="timeline-config">
+							<div class="margintop20 row">
+								
+								<div class="col-md-10 col-md-offset-1">
+									<form class="form-horizontal">
+										 <div class="form-group">
+										    <label for="inputEmail3" class="col-sm-2 control-label">Encargado Testmatch</label>
+										    <div class="col-sm-10">
+										      	<input type="email" class="form-control" id="inputEmail3" placeholder="Nombre o Email">
+										    </div>
+										 </div>
+									</form>
+
+									<hr> 
+
+									<div class="well">
+								  		<h4>Configurar Timeline</h4>
+								  		<ul>
+								  			<li>
+								  				<div class="checkbox">
+												  <label>
+												    <input type="checkbox" id="blankCheckbox" value="option1" aria-label="...">Testmatch
+												  </label>
+												</div>
+								  			</li>
+
+								  			<li>
+								  				<div class="checkbox">
+												  <label>
+												    <input type="checkbox" id="blankCheckbox" value="option1" aria-label="...">Contacto telefónico
+												  </label>
+												</div>
+								  			</li>
+
+								  			<li>
+								  				<div class="checkbox">
+												  <label>
+												    <input type="checkbox" id="blankCheckbox" value="option1" aria-label="..."> Primera entrevista
+												  </label>
+												</div>
+								  			</li>
+
+								  			<li>
+								  				<div class="checkbox">
+												  <label>
+												    <input type="checkbox" id="blankCheckbox" value="option1" aria-label="..."> Segunda entrevista
+												  </label>
+												</div>
+								  			</li>
+
+								  			<li>
+								  				<h5>Pruebas</h5>
+								  				<div class="checkbox">
+												  <label>
+												    <input type="checkbox" id="blankCheckbox" value="option1" aria-label="..."> Psicotécnico
+												  </label>
+												</div>
+												<div class="checkbox">
+												  <label>
+												    <input type="checkbox" id="blankCheckbox" value="option1" aria-label="..."> Ambiental
+												  </label>
+												</div>
+												<div class="checkbox">
+												  <label>
+												    <input type="checkbox" id="blankCheckbox" value="option1" aria-label="..."> Médico
+												  </label>
+												</div>
+												<div class="checkbox">
+												  <label>
+												    <input type="checkbox" id="blankCheckbox" value="option1" aria-label="..."> Técnico
+												  </label>
+												</div>
+								  			</li>
+								  			<li style="list-style: none; margin-left: -40px;">
+								  				<a class="btn btn-default">Agregar instancia</a>
+								  			</li>
+
+								  		</ul>
+								  	</div>
+								  	<div class="text-center" style="margin-bottom: 20px;">
+										<a class="btn btn-primary" id="habilitar-timeline">Aceptar</a>
+									</div>
+								</div>
+							</div>
+
+
+						</div>							
+
+
+
 						<div class="listado-postulantes panel" id="postulantes">
 							<article class="postulante"  data-toggle="modal" data-target="#myModal">
 								<div class="tile-postulante">
@@ -452,74 +553,326 @@
 						</div> <!-- end listado recomendados -->
 
 
-						<div id="timeline" class="panel">
-						<ul class="timeline2">
-							<li>Etapa 1</li>
-							<li>Etapa 2</li>
-							<li>Etapa 3</li>
-							<li>Etapa 4</li>
-							<li>Etapa 5</li>
+						<div class="listado-postulantes panel" id="adquiridos">
+							<article class="postulante"  data-toggle="modal" data-target="#myModal">
+								<div class="tile-postulante">
+									<span class="ion-heart fav"></span>
+									<img src="http://placehold.it/100x100" class="img-responsive img-circle">
+									<h4>Flavia S.</h4>
+									<p><small>30 años</small></p>
+									<p><small><small class="ion-ios-location"></small> Palermo, Buenos Aires</small></p>
+									<hr>
+									<div class="info">
+										<p>
+											<strong>Estudios:</strong>
+											Secundario Completo
+										</p>
+										<p>
+											<strong>Trabaja en:</strong>
+											McDonalds
+										</p>
+										<p>
+											<strong>Anterior:</strong>
+											Compumundo
+										</p>
+										<p>
+											<strong>Perfil:</strong>
+											Vendedor - Telemarketing
+										</p>
+										<p>
+											<strong>Calificación:</strong>
+											<span class="ion-star"></span>
+											<span class="ion-star"></span>
+											<span class="ion-star"></span>
+											<span class="ion-star"></span>
+											<span class="ion-star"></span>
+										</p>
+									</div>
+								</div>
+							</article>
+
+							<article class="postulante"  data-toggle="modal" data-target="#myModal">
+								<div class="tile-postulante">
+									<span class="ion-heart fav"></span>
+									<img src="http://placehold.it/100x100" class="img-responsive img-circle">
+									<h4>Ajelandro F.</h4>
+									<p><small>30 años</small></p>
+									<p><small><small class="ion-ios-location"></small> Palermo, Buenos Aires</small></p>
+									<hr>
+									<div class="info">
+										<p>
+											<strong>Estudios:</strong>
+											Secundario Completo
+										</p>
+										<p>
+											<strong>Trabaja en:</strong>
+											McDonalds
+										</p>
+										<p>
+											<strong>Anterior:</strong>
+											Compumundo
+										</p>
+										<p>
+											<strong>Perfil:</strong>
+											Vendedor - Telemarketing
+										</p>
+										<p>
+											<strong>Calificación:</strong>
+											<span class="ion-star"></span>
+											<span class="ion-star"></span>
+											<span class="ion-star"></span>
+											<span class="ion-star"></span>
+											<span class="ion-star"></span>
+										</p>
+									</div>
+								</div>
+							</article>
+
+
+							<article class="postulante"  data-toggle="modal" data-target="#myModal">
+								<div class="tile-postulante">
+									<span class="ion-heart fav"></span>
+									<img src="http://placehold.it/100x100" class="img-responsive img-circle">
+									<h4>Victoria F.</h4>
+									<p><small>30 años</small></p>
+									<p><small><small class="ion-ios-location"></small> Palermo, Buenos Aires</small></p>
+									<hr>
+									<div class="info">
+										<p>
+											<strong>Estudios:</strong>
+											Secundario Completo
+										</p>
+										<p>
+											<strong>Trabaja en:</strong>
+											McDonalds
+										</p>
+										<p>
+											<strong>Anterior:</strong>
+											Compumundo
+										</p>
+										<p>
+											<strong>Perfil:</strong>
+											Vendedor - Telemarketing
+										</p>
+										<p>
+											<strong>Calificación:</strong>
+											<span class="ion-star"></span>
+											<span class="ion-star"></span>
+											<span class="ion-star"></span>
+											<span class="ion-star"></span>
+											<span class="ion-star"></span>
+										</p>
+									</div>
+								</div>
+							</article>
+
+							<article class="postulante"  data-toggle="modal" data-target="#myModal">
+								<div class="tile-postulante">
+									<span class="ion-heart fav"></span>
+									<img src="http://placehold.it/100x100" class="img-responsive img-circle">
+									<h4>Federico F.</h4>
+									<p><small>30 años</small></p>
+									<p><small><small class="ion-ios-location"></small> Palermo, Buenos Aires</small></p>
+									<hr>
+									<div class="info">
+										<p>
+											<strong>Estudios:</strong>
+											Secundario Completo
+										</p>
+										<p>
+											<strong>Trabaja en:</strong>
+											McDonalds
+										</p>
+										<p>
+											<strong>Anterior:</strong>
+											Compumundo
+										</p>
+										<p>
+											<strong>Perfil:</strong>
+											Vendedor - Telemarketing
+										</p>
+										<p>
+											<strong>Calificación:</strong>
+											<span class="ion-star"></span>
+											<span class="ion-star"></span>
+											<span class="ion-star"></span>
+											<span class="ion-star"></span>
+											<span class="ion-star"></span>
+										</p>
+									</div>
+								</div>
+							</article>
+
+
+							<article class="postulante"  data-toggle="modal" data-target="#myModal">
+								<div class="tile-postulante">
+									<span class="ion-heart fav"></span>
+									<img src="http://placehold.it/100x100" class="img-responsive img-circle">
+									<h4>Benjamín A.</h4>
+									<p><small>30 años</small></p>
+									<p><small><small class="ion-ios-location"></small> Palermo, Buenos Aires</small></p>
+									<hr>
+									<div class="info">
+										<p>
+											<strong>Estudios:</strong>
+											Secundario Completo
+										</p>
+										<p>
+											<strong>Trabaja en:</strong>
+											McDonalds
+										</p>
+										<p>
+											<strong>Anterior:</strong>
+											Compumundo
+										</p>
+										<p>
+											<strong>Perfil:</strong>
+											Vendedor - Telemarketing
+										</p>
+										<p>
+											<strong>Calificación:</strong>
+											<span class="ion-star"></span>
+											<span class="ion-star"></span>
+											<span class="ion-star"></span>
+											<span class="ion-star"></span>
+											<span class="ion-star"></span>
+										</p>
+									</div>
+								</div>
+							</article>
+
+							<article class="postulante"  data-toggle="modal" data-target="#myModal">
+								<div class="tile-postulante">
+									<span class="ion-heart fav"></span>
+									<img src="http://placehold.it/100x100" class="img-responsive img-circle">
+									<h4>Lisandro A.</h4>
+									<p><small>30 años</small></p>
+									<p><small><small class="ion-ios-location"></small> Palermo, Buenos Aires</small></p>
+									<hr>
+									<div class="info">
+										<p>
+											<strong>Estudios:</strong>
+											Secundario Completo
+										</p>
+										<p>
+											<strong>Trabaja en:</strong>
+											McDonalds
+										</p>
+										<p>
+											<strong>Anterior:</strong>
+											Compumundo
+										</p>
+										<p>
+											<strong>Perfil:</strong>
+											Vendedor - Telemarketing
+										</p>
+										<p>
+											<strong>Calificación:</strong>
+											<span class="ion-star"></span>
+											<span class="ion-star"></span>
+											<span class="ion-star"></span>
+											<span class="ion-star"></span>
+											<span class="ion-star"></span>
+										</p>
+									</div>
+								</div>
+							</article>
+						</div> <!-- end listado adquiridos -->
+
+
+
+						
+						<div id="timeline" class="panel" style="display:none">
+						<ul class="timeline2 title">
+							<li><p>Postulante</p></li>
+							<li><p>Check Telefónico</p></li>
+							<li><p>Test Match</p></li>
+							<li><p>Primera entrevista</p></li>
+							<li><p>Segunda entrevista</p></li>
+							<li><p>Pruebas</p></li>
+							<li><p>Ingreso</p></li>
+						</ul>
+
+
+						<ul class="timeline2 flow">
+							<li>Matías Santuchi</li>
+							<li>
+								<a data-toggle="modal" data-target="#telefonico">
+									<img src="https://media.licdn.com/media-proxy/ext?w=800&h=800&hash=RYQ73TEpnxfdNAlhX0rvCzQQzFQ%3D&ora=1%2CaFBCTXdkRmpGL2lvQUFBPQ%2CxAVta5g-0R6nlh8Tw1Ek-L7Q40O550NJC4HTDy_8DnHzq8jAIiihMNiKMfau41ATeCwXyAk3f---Fj2_BMvtaNLiLJYR9-6YRvGCNCxDOzoGjzhAtfNibU1h57b3CcLYOGsd9qpXfy7gYvy7RFMZKAYDxeiCH4rIDnFD1UC9eP7DKf0ADJR60bdOwgtS6p33QsQywNRe3zlA3Ai9rp_1IR8WvcWkInyXAW8WWEKYH65A77yXyzSmpB3Lnkb2lIm8LqGwFJE2zES_xevUXziqjnd_m1g4jS5BpdpeB2r6pvwtuUSlHP8KWlOlhbDMXkupoKgUzww3ofqADRaQS1ExvgFJddTgs34NJ4PEm1WL9AJsffp1T2pO1cS5bOmO6juPMFFOPHmrZnQCnYrOh6iVAfZKbKltusM7atA9UCEratMRDj22n_oWAGkgpqsDfVnYOTLgjaTiW4oLdbx2CT8XFsfSGc5T_oha7Q3yzSR2WON2DfQ_olZrWagnofPdleyQgulujDdNYW7nt-vvaDaU1-umwaYbaXyqZWFncb5sKTY" class="img-circle img-profile-tl">
+								</a>
+							</li>
+							<li> - </li>
+							<li> - </li>
+							<li> - </li>
+							<li> - </li>
+							<li> - </li> 
+						</ul>
+
+
+
+						<ul class="timeline2 flow">
+							<li>Alejandro Galgo</li>
+							<li><span class="pin ion-checkmark-circled ok"></span></li>
+							<li>
+								<img src="http://blogs.mccombs.utexas.edu/accountingtimes/files/2015/11/Brian-Monsen-2eg0ike.jpg" class="img-circle img-profile-tl">
+								<article class="postulante">
+									<div class="tile-postulante">
+										<span class="ion-heart fav"></span>
+										<img src="http://blogs.mccombs.utexas.edu/accountingtimes/files/2015/11/Brian-Monsen-2eg0ike.jpg" class="img-responsive img-circle">
+										<h4>Juan Carlos O.</h4>
+										<hr>
+										<div class="info">
+											<p>
+												<strong>Edad:</strong>
+												30
+											</p>
+											<p>
+												<strong>Trabaja en:</strong>
+												McDonalds
+											</p>
+											<p>
+												<strong>Perfil:</strong>
+												Vendedor - Telemarketing
+											</p>
+										</div>
+										<hr>
+										<div class="actions text-center">
+											<a class="btn btn-default">Fuera del proceso</a>
+											<a class="btn btn-primary">Avanzar</a>
+										</div>
+									</div>
+
+									<div class="historia">
+										<ul class="historial">
+											<li><strong>22/10</strong> · Postulación</li>
+											<li><strong>29/10</strong> · Contacto via Whatsapp</li>
+											<li><strong>30/10</strong> · Postulación</li>
+											<li><hr></li>
+											<li><a href="" class="btn btn-default">Ver historial completo</a></li>
+										</ul>
+									</div>
+								</article>
+								<span class="pin fa fa-times-circle action absolute fa-spinner fa-pulse fa-fw"></span>
+								
+							</li>
+							<li> - </li>
+							<li> - </li>
+							<li> - </li>
+							<li> - </li> 
 						</ul>
 
 						<ul class="timeline2 flow">
+							<li>Brian Sarmiento</li>
 							<li><span class="pin ion-checkmark-circled ok"></span></li>
 							<li><span class="pin ion-checkmark-circled ok"></span></li>
-							<li><span class="pin ion-checkmark-circled ok"></li>
-							<li><span class="pin ion-checkmark-circled ok"></li>
+							<li><span class="pin ion-checkmark-circled ok"></span></li>
 							<li>
-								<img src="http://placehold.it/60x60" class="img-circle">
+								<img src="http://blogs.mccombs.utexas.edu/accountingtimes/files/2015/11/Brian-Monsen-2eg0ike.jpg" class="img-circle img-profile-tl">
 								<article class="postulante">
 									
 											<div class="tile-postulante">
 												<span class="ion-heart fav"></span>
-												<img src="http://placehold.it/100x100" class="img-responsive img-circle">
-												<h4>Felicitas J.</h4>
-												<hr>
-												<div class="info">
-													<p>
-														<strong>Edad:</strong>
-														30
-													</p>
-													<p>
-														<strong>Trabaja en:</strong>
-														McDonalds
-													</p>
-													<p>
-														<strong>Perfil:</strong>
-														Vendedor - Telemarketing
-													</p>
-												</div>
-												<hr>
-												<div class="actions text-center">
-													<a class="btn btn-default">Fuera del proceso</a>
-													<a class="btn btn-primary">Avanzar</a>
-												</div>
-											</div>
-
-											<div class="historia">
-												<ul class="historial">
-													<li><strong>22/10</strong> · Postulación</li>
-													<li><strong>29/10</strong> · Contacto via Whatsapp</li>
-													<li><strong>30/10</strong> · Postulación</li>
-													<li><hr></li>
-													<li><a href="" class="btn btn-default">Ver historial completo</a></li>
-												</ul>
-											</div>
-									</article>
-							</li> 
-						</ul>
-
-						<ul class="timeline2 flow">
-							<li><span class="pin ion-checkmark-circled ok"></span></li>
-							<li><span class="pin ion-checkmark-circled ok"></span></li>
-							<li><span class="pin ion-checkmark-circled ok"></li>
-							<li>
-								<img src="http://placehold.it/60x60" class="img-circle">
-								<article class="postulante">
-									
-											<div class="tile-postulante">
-												<span class="ion-heart fav"></span>
-												<img src="http://placehold.it/100x100" class="img-responsive img-circle">
+												<img src="http://blogs.mccombs.utexas.edu/accountingtimes/files/2015/11/Brian-Monsen-2eg0ike.jpg" class="img-responsive img-circle">
 												<h4>Juan Carlos O.</h4>
 												<hr>
 												<div class="info">
@@ -554,55 +907,145 @@
 											</div>
 										</article>
 							</li>
-							<li><span class="pin"></li>
+							<li><span class="pin"></span></li>
+							<li><span class="pin"></span></li>
 						</ul>
 
 						<ul class="timeline2 flow">
-							<li><span class="pin ion-checkmark-circled ok"></span></li>
+							<li>Diana Krall</li>
+							<li><span class="pin ion-checkmark-circled warning"></span></li>
 							<li>
-								<img src="http://placehold.it/60x60" class="img-circle">
+								<img src="https://media.licdn.com/media-proxy/ext?w=800&h=800&hash=eORUVUmWJ207NdbPsoX7pKubIDY%3D&ora=1%2CaFBCTXdkRmpGL2lvQUFBPQ%2CxAVta9Er0VO4khUewRQg7qCEoQGz60oIUpKRAW__H3D0vsrFICu2KJOcZrChpVoJeC0ewlZmIPLsEXKwD8fpbd--OJRs2Mq6OZLkN1BIYwwx" class="img-circle img-profile-tl">
 								<article class="postulante">
-									
-											<div class="tile-postulante">
-												<span class="ion-heart fav"></span>
-												<img src="http://placehold.it/100x100" class="img-responsive img-circle">
-												<h4>Susana G.</h4>
-												<hr>
-												<div class="info">
-													<p>
-														<strong>Edad:</strong>
-														30
-													</p>
-													<p>
-														<strong>Trabaja en:</strong>
-														McDonalds
-													</p>
-													<p>
-														<strong>Perfil:</strong>
-														Vendedor - Telemarketing
-													</p>
-												</div>
-												<hr>
-												<div class="actions text-center">
-													<a class="btn btn-default">Fuera del proceso</a>
-													<a class="btn btn-primary">Avanzar</a>
-												</div>
-											</div>
+									<div class="tile-postulante">
+										<span class="ion-heart fav"></span>
+										<img src="https://media.licdn.com/media-proxy/ext?w=800&h=800&hash=eORUVUmWJ207NdbPsoX7pKubIDY%3D&ora=1%2CaFBCTXdkRmpGL2lvQUFBPQ%2CxAVta9Er0VO4khUewRQg7qCEoQGz60oIUpKRAW__H3D0vsrFICu2KJOcZrChpVoJeC0ewlZmIPLsEXKwD8fpbd--OJRs2Mq6OZLkN1BIYwwx" class="img-responsive img-circle">
+										<h4>Susana G.</h4>
+										<hr>
+										<div class="info">
+											<p>
+												<strong>Edad:</strong>
+												30
+											</p>
+											<p>
+												<strong>Trabaja en:</strong>
+												McDonalds
+											</p>
+											<p>
+												<strong>Perfil:</strong>
+												Vendedor - Telemarketing
+											</p>
+										</div>
+										<hr>
+										<div class="actions text-center">
+											<a class="btn btn-default">Fuera del proceso</a>
+											<a class="btn btn-primary">Avanzar</a>
+										</div>
+									</div>
 
-											<div class="historia">
-												<ul class="historial">
-													<li><strong>22/10</strong> · Postulación</li>
-													<li><strong>29/10</strong> · Contacto via Whatsapp</li>
-													<li><strong>30/10</strong> · Postulación</li>
-													<li><hr></li>
-													<li><a href="" class="btn btn-default">Ver historial completo</a></li>
-												</ul>
-											</div>
-										</article>
+									<div class="historia">
+										<ul class="historial">
+											<li><strong>22/10</strong> · Postulación</li>
+											<li><strong>29/10</strong> · Contacto via Whatsapp</li>
+											<li><strong>30/10</strong> · Postulación</li>
+											<li><p class="bg-danger text-left">10/11 · Rechazado por: Daniela Lopez</p></li>
+											<li><hr></li>
+											<li><a href="" class="btn btn-default">Ver historial completo</a></li>
+										</ul>
+									</div>
+								</article>
+
+								<span class="pin fa fa-times-circle out absolute"></span>
 							</li>
-							<li><span class="pin"></li>
-							<li><span class="pin"></li>
-							<li><span class="pin"></li>
+							<li><span class="pin"></span></li>
+							<li><span class="pin"></span></li>
+							<li><span class="pin"></span></li>
+							<li><span class="pin"></span></li>
+						</ul>
+
+
+
+						<ul class="timeline2 flow">
+							<li>Diana Krall</li>
+							<li><span class="pin ion-checkmark-circled warning"></span></li>
+							<li><span class="pin ion-checkmark-circled warning"></span></li>
+						
+							
+							<li><a data-toggle="modal" data-target="#modalEntrevista2"><span class="pin"></span></a></li>
+							<li>
+								<ul class="text-left pruebas">
+									<li><small><span class="pin mini"></span> Psicotécnico</small></li>
+									<li><small><span class="pin mini"></span> Técnico</small></li>
+									<li><small><span class="pin mini"></span> Ambiental</small></li>
+									<li><small><span class="pin mini"></span> Médico</small></li>
+								</ul>
+							</li>
+							<li><span class="pin"></span></li>
+						</ul>
+
+
+
+						<ul class="timeline2 flow">
+							<li>Diana Krall</li>
+							<li><span class="pin ion-checkmark-circled warning"></span></li>
+							<li><span class="pin ion-checkmark-circled warning"></span></li>
+							<li><span class="pin ion-checkmark-circled warning"></span></li>
+							
+							
+							<li><a data-toggle="modal" data-target="#modalEntrevista2"><span class="pin"></span></a></li>
+							<li>
+								
+								<a data-toggle="modal" data-target="#modalEntrevista">
+								<img src="https://media.licdn.com/media-proxy/ext?w=800&h=800&hash=eORUVUmWJ207NdbPsoX7pKubIDY%3D&ora=1%2CaFBCTXdkRmpGL2lvQUFBPQ%2CxAVta9Er0VO4khUewRQg7qCEoQGz60oIUpKRAW__H3D0vsrFICu2KJOcZrChpVoJeC0ewlZmIPLsEXKwD8fpbd--OJRs2Mq6OZLkN1BIYwwx" class="img-circle img-profile-tl">
+							</a>
+								<article class="postulante">
+									<div class="tile-postulante">
+										<span class="ion-heart fav"></span>
+										<img src="https://media.licdn.com/media-proxy/ext?w=800&h=800&hash=eORUVUmWJ207NdbPsoX7pKubIDY%3D&ora=1%2CaFBCTXdkRmpGL2lvQUFBPQ%2CxAVta9Er0VO4khUewRQg7qCEoQGz60oIUpKRAW__H3D0vsrFICu2KJOcZrChpVoJeC0ewlZmIPLsEXKwD8fpbd--OJRs2Mq6OZLkN1BIYwwx" class="img-responsive img-circle">
+										<h4>Susana G.</h4>
+										<hr>
+										<div class="info">
+											<p>
+												<strong>Edad:</strong>
+												30
+											</p>
+											<p>
+												<strong>Trabaja en:</strong>
+												McDonalds
+											</p>
+											<p>
+												<strong>Perfil:</strong>
+												Vendedor - Telemarketing
+											</p>
+										</div>
+										<hr>
+										<div class="actions text-center">
+											<a class="btn btn-default">Fuera del proceso</a>
+											<a class="btn btn-primary">Avanzar</a>
+										</div>
+									</div>
+
+									<div class="historia">
+										<ul class="historial">
+											<li><strong>22/10</strong> · Postulación</li>
+											<li><strong>29/10</strong> · Contacto via Whatsapp</li>
+											<li><strong>30/10</strong> · Postulación</li>
+											<li><p class="bg-danger text-left">10/11 · Rechazado por: Daniela Lopez</p></li>
+											<li><hr></li>
+											<li><a href="" class="btn btn-default">Ver historial completo</a></li>
+										</ul>
+									</div>
+								</article>
+
+					
+								<ul class="text-left pruebas">
+									<li><small><span class="pin mini"></span> Psicotécnico</small></li>
+									<li><small><span class="pin mini"></span> Técnico</small></li>
+									<li><small><span class="pin mini"></span> Ambiental</small></li>
+									<li><small><span class="pin mini"></span> Médico</small></li>
+								</ul>
+							</li>
+							<li><span class="pin"></span></li>
 						</ul>
 
 					</div>
@@ -845,12 +1288,242 @@
 	        
 	      </div>
 	      <div class="modal-footer">
-	        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-	        <button type="button" class="btn btn-primary">Save changes</button>
+	        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+	        <button type="button" class="btn btn-primary">Desbloquear perfil</button>
 	      </div>
 	    </div>
 	  </div>
 	</div>
+
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="telefonico" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Check Telefónico</h4>
+      </div>
+      <div class="modal-body">
+      	<form>
+        	<div class="form-group">
+        		<label>Dejar comentario</label>
+        		<textarea class="form-control"></textarea>
+        	</div>
+
+        </form>
+      </div>
+      <div class="modal-footer">
+    <a href="" class="btn btn-success">Avanzar</a>
+        		<a href="" class="btn btn-warning">Avanzar con warning</a>
+        		<a href="" class="btn btn-danger">Rechazar</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Modal entrevista -->
+<div class="modal fade bs-example-modal-lg" id="modalEntrevista" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Entrevista</h4>
+      </div>
+      <div class="modal-body">
+        
+        <form class="form-horizontal">
+		  <div class="form-group">
+		    <label for="inputEmail3" class="col-sm-3 control-label">Fecha y hora</label>
+		    <div class="col-sm-9">
+		      <input type="datetime" class="form-control" id="inputEmail3" placeholder="10/10/2017 12:33">
+		    </div>
+		  </div>
+		  <div class="form-group">
+		    <label for="inputPassword3" class="col-sm-3 control-label">Observaciones iniciales sobre el postulante</label>
+		    <div class="col-sm-9">
+		      <textarea class="form-control"></textarea>
+		    </div>
+		  </div>
+
+		  <div class="form-group">
+		    <label for="inputPassword3" class="col-sm-3 control-label">Nivel socio-cultural</label>
+		    <div class="col-sm-9">
+		      <textarea class="form-control"></textarea>
+		    </div>
+		  </div>
+
+		  <div class="form-group">
+		    <label for="inputPassword3" class="col-sm-3 control-label">Formación</label>
+		    <div class="col-sm-9">
+		      <textarea class="form-control"></textarea>
+		    </div>
+		  </div>
+
+		  <div class="form-group">
+		    <label for="inputPassword3" class="col-sm-3 control-label">Historia Laboral</label>
+		    <div class="col-sm-9">
+		      <textarea class="form-control"></textarea>
+		    </div>
+		  </div>
+
+		  <div class="form-group">
+		    <label for="inputPassword3" class="col-sm-3 control-label">Logros</label>
+		    <div class="col-sm-9">
+		      <textarea class="form-control"></textarea>
+		    </div>
+		  </div>
+		  
+		  <div class="form-group">
+		    <label for="inputPassword3" class="col-sm-3 control-label">Esquema de compensación</label>
+		    <div class="col-sm-9">
+		      <textarea class="form-control"></textarea>
+		    </div>
+		  </div>
+
+		  <div class="form-group">
+		    <label for="inputPassword3" class="col-sm-3 control-label">Disposición al cambio</label>
+		    <div class="col-sm-9">
+		      <textarea class="form-control"></textarea>
+		    </div>
+		  </div>
+
+		  <div class="form-group">
+		    <label for="inputPassword3" class="col-sm-3 control-label">Conculusión</label>
+		    <div class="col-sm-9">
+		      <textarea class="form-control"></textarea>
+		    </div>
+		  </div>
+
+
+		</form>      
+
+		</div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary">Guardar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<!-- Modal entrevista 2-->
+<div class="modal fade bs-example-modal-lg" id="modalEntrevista2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Entrevista</h4>
+      </div>
+      <div class="modal-body">
+        
+        <form class="form-horizontal">
+		  <div class="form-group">
+		    <label for="inputEmail3" class="col-sm-3 control-label">Fecha y hora</label>
+		    <div class="col-sm-9">
+		      <input type="datetime" class="form-control" id="inputEmail3" placeholder="10/10/2017 12:33">
+		    </div>
+		  </div>
+		  <div class="form-group">
+		    <label for="inputPassword3" class="col-sm-3 control-label">Observaciones iniciales sobre el postulante</label>
+		    <div class="col-sm-9">
+		      <textarea class="form-control text-left" disabled> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</textarea>
+		    </div>
+		  </div>
+
+		  <div class="form-group">
+		    <label for="inputPassword3" class="col-sm-3 control-label">Nivel socio-cultural</label>
+		    <div class="col-sm-9">
+		      <textarea class="form-control text-left" disabled> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</textarea>
+		    </div>
+		  </div>
+
+		  <div class="form-group">
+		    <label for="inputPassword3" class="col-sm-3 control-label">Formación</label>
+		    <div class="col-sm-9">
+		      <textarea class="form-control text-left" disabled> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</textarea>
+		    </div>
+		  </div>
+
+		  <div class="form-group">
+		    <label for="inputPassword3" class="col-sm-3 control-label">Historia Laboral</label>
+		    <div class="col-sm-9">
+		      <textarea class="form-control text-left" disabled> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</textarea>
+		    </div>
+		  </div>
+
+		  <div class="form-group">
+		    <label for="inputPassword3" class="col-sm-3 control-label">Logros</label>
+		    <div class="col-sm-9">
+		      <textarea class="form-control text-left" disabled> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</textarea>
+		    </div>
+		  </div>
+		  
+		  <div class="form-group">
+		    <label for="inputPassword3" class="col-sm-3 control-label">Esquema de compensación</label>
+		    <div class="col-sm-9">
+		      <textarea class="form-control text-left" disabled> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</textarea>
+		    </div>
+		  </div>
+
+		  <div class="form-group">
+		    <label for="inputPassword3" class="col-sm-3 control-label">Disposición al cambio</label>
+		    <div class="col-sm-9">
+		      <textarea class="form-control text-left" disabled> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</textarea>
+		    </div>
+		  </div>
+
+		  <div class="form-group">
+		    <label for="inputPassword3" class="col-sm-3 control-label">Conculusión</label>
+		    <div class="col-sm-9">
+		      <textarea class="form-control text-left" disabled> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</textarea>
+		    </div>
+		  </div>
+
+		  <hr>
+		<div class="form-group">
+		    <label for="inputPassword3" class="col-sm-3 control-label">Consolidado</label>
+		    <div class="col-sm-9">
+		      <textarea class="form-control text-left" ></textarea>
+		    </div>
+		  </div>
+
+
+
+
+		</form>      
+
+		</div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary">Guardar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
@@ -860,16 +1533,28 @@
  		$(document).on("ready", function(){
  			$("#timeline").css("display","none");
  			$("#recomendados").css("display","none");
+ 			$("#adquiridos").css("display","none");
+ 			$("#timeline-config").css("display","none");
+
  			$(".menu").on("click", function(){
  				activa="#"+$(this).attr("data-target");
 				$(".menu").parent().removeClass("active")
  				$(this).parent().addClass("active")
  				$(".panel").css("display","none");
  				$(activa).css("display","flex");
- 				if(activa=="#timeline"){
+ 				if(activa=="#timeline" || activa=="#timeline-config"){
  					$(activa).css("display","block");
  				}
  			})
+ 			$("#habilitar-timeline").on("click", function(){
+
+ 				$("#timeline-config").css("display", "none");
+ 				$("#timeline").css("display", "block");
+ 				$("#btn-timeline-config").css("display", "none");
+ 				$("#btn-timeline").css("display", "block");
+ 				$("#btn-timeline").addClass("active");
+ 			})
+ 			
  		})
  	</script>
 

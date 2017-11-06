@@ -108,6 +108,13 @@
 		}
 	}
 
+	&.title{
+		p{
+			margin: 10px 0;
+			font-weight: bold;
+		}
+	}
+
 	&.flow{
 		position: relative;
 		border-bottom: 1px solid #bbb;
@@ -132,17 +139,65 @@
 			width: 20px;
 			height: 20px;
 			border-radius: 50%;
-			background: #999;
+			background: #cdcdcd;
 			display: inline-block; 
 			font-size: 14px;
     		color: white;
+    		display: flex;
+    		align-items: center;
+    		justify-content: center;
+    		
+    		&.mini{
+    			width: 15px;
+    			height: 15px;
+    			font-size: 11px;
+    		}
     		&.ok{
-    			background: green;
+    			background: limegreen;
+    		}
+    		&.warning{
+    			background: gold;
+    		}
+    		&.out{
+    			background: red;
+    		}
+
+    		&.waiting{ 
+    			background: orange;			
+    		}
+
+    		&.action{
+    			background: DodgerBlue;
+    		}
+
+    		&.absolute{
+    			position: absolute;
+    			top: 45px;
     		}
 		}
+
+		.pruebas{
+			display: block;
+			padding: 0;
+			li{
+				display: block;
+				text-align: left;
+				span{
+					display: inline-block;
+				}
+			}
+		}
+
+		.img-profile-tl{
+			max-width: 60px;
+		}	
+	
+		li{
+			&:first-child{
+				text-align: left; 
+			}
+		}
 	}
-
-
 }
 
 .timeline{
