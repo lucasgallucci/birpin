@@ -1337,4 +1337,9 @@ header {
       background: red;
       box-shadow: 0 0 10px red; }
 
+.vcenter {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
 /*# sourceMappingURL=style.css.map */
