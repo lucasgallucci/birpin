@@ -1203,6 +1203,32 @@ body, html {
     font-size: 15px;
     text-transform: uppercase; }
 
+#timeline-user .timeline-user {
+  position: relative; }
+  #timeline-user .timeline-user > li {
+    margin-bottom: 50px; }
+    #timeline-user .timeline-user > li:first-child {
+      list-style: none;
+      left: -57px;
+      position: relative;
+      margin-bottom: 0; }
+      #timeline-user .timeline-user > li:first-child img {
+        border: 2px solid #3c4959; }
+  #timeline-user .timeline-user:before {
+    content: "";
+    width: 1px;
+    height: 100%;
+    position: absolute;
+    background: #3c4959;
+    left: 25px;
+    top: 14px; }
+#timeline-user .cv {
+  margin-top: 30px; }
+  #timeline-user .cv div {
+    float: right; }
+  #timeline-user .cv span {
+    font-size: 30px; }
+
 @media only screen {
   @-ms-viewport {
     width: device-width; } }
