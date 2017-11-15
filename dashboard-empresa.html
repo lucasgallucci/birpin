@@ -19,112 +19,256 @@
   <body id="dashboard-empresa-all">
 
   	<nav class="navbar navbar-default">
-		<div class="container">
-			<!-- Brand and toggle get grouped for better mobile display -->
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-					<span class="sr-only">Toggle navigation</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-				<a class="navbar-brand" href="#"><img src="imagenes/birpin.svg"></a>
-			</div>
-		</div>
-	</nav>
+  		<div class="container">
+  			<!-- Brand and toggle get grouped for better mobile display -->
+  			<div class="navbar-header">
+  				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+  					<span class="sr-only">Toggle navigation</span>
+  					<span class="icon-bar"></span>
+  					<span class="icon-bar"></span>
+  					<span class="icon-bar"></span>
+  				</button>
+  				<a class="navbar-brand" href="#"><img src="imagenes/birpin.svg"></a>
+  			</div>
+  		</div>
+  	</nav>
 
-	<div class="container">
-		<div class="row">
-			<div class="col-md-4">
-				<h4>Perfil</h4>
-				<div class="well datos">
+  	<div class="container">
+  		<div class="row">
+  			<div class="col-sm-4">
+  				<h4>Perfil</h4>
+  				<div class="well datos">
 
-					<img class="profile img-circle" src="http://placehold.it/500x500">
-					<h3 class="text-center">Nombre Empresa</h3>
-				
-					<hr>
+  					<div class="profile">
+  						<img class="img-circle img-responsive" src="http://placehold.it/500x500">
+  						
+  						<span class="config">
+  							<a data-toggle="modal" data-target="#fotoPerfil">
+  								<span class="fa fa-cog config-btn"></span>
+  							</a>
+  						</span>
+  					</div>
+  					
+  					<h3 class="text-center">Nombre Empresa</h3>
 
-					<article class="items">
-						<p>	
-							<label>email</label>
-							empresa@empresa.com.ar
+  					<hr>
 
-							<span class="actions">
-								<span class="fa fa-pencil"></span>
-								<span class="fa fa-plus-circle"></span>
-								<span class="fa fa-trash"></span>
-							</span>
-						</p>
+  					<article class="items">
+  						<p>	
+  							<label>email</label>
+  							empresa@empresa.com.ar
 
-						<p>	
-							<label>teléfono</label>
-							+54 (11) 4723-5432
-							<span class="actions">
-								<span class="fa fa-pencil"></span>
-								<span class="fa fa-plus-circle"></span>
-								<span class="fa fa-trash"></span>
-							</span>
-						</p>
+  							<span class="actions">
+  								<span class="fa fa-pencil"></span>
+  								<span class="fa fa-plus-circle"></span>
+  								<span class="fa fa-trash"></span>
+  							</span>
+  						</p>
 
-						<p>	
-							<label>dirección</label>
-							Av. Cabildo 2234 8vo piso.
-							<span class="actions">
-								<span class="fa fa-pencil"></span>
-								<span class="fa fa-plus-circle"></span>
-								<span class="fa fa-trash"></span>
-							</span>
-						</p>
-					</article>
+  						<p>	
+  							<label>teléfono</label>
+  							+54 (11) 4723-5432
+  							<span class="actions">
+  								<span class="fa fa-pencil"></span>
+  								<span class="fa fa-plus-circle"></span>
+  								<span class="fa fa-trash"></span>
+  							</span>
+  						</p>
 
-					
-				</div>
+  						<p>	
+  							<label>dirección</label>
+  							Av. Cabildo 2234 8vo piso.
+  							<span class="actions">
+  								<span class="fa fa-pencil"></span>
+  								<span class="fa fa-plus-circle"></span>
+  								<span class="fa fa-trash"></span>
+  							</span>
+  						</p>
+  					</article>
 
-			</div>
 
-			
-			<div class="col-xs-8">
-				<h4>Editores</h4>
-				
-				<div class="well">
-				<form class="form-horizontal">
-					  <div class="form-group">
-					    <label for="inputEmail3" class="col-sm-1 control-label">Email</label>
-					    <div class="col-sm-5">
-					      <input type="email" class="form-control" id="inputEmail3" placeholder="Email del editor">
-					    </div>
-					  
-					    <label for="inputPassword3" class="col-sm-1 control-label">Nombre</label>
-					    <div class="col-sm-5">
-					      <input type="text" class="form-control" id="inputPassword3" placeholder="Nombre del editor">
-					    </div>
-					  </div>
-					  <div class="form-group">
-					    <div class="col-sm-offset-1 col-sm-10">
-					      <a href=""><span class="fa fa-plus-circle"></span> agregar editor</a>
-					    </div>
-					  </div>
-					  <div class="form-group">
-					    <div class="col-sm-offset-1 col-sm-10">
-					      <button type="submit" class="btn btn-default">Enviar invitaciones</button>
-					    </div>
-					  </div>
-					</form>
+  				</div>
 
-					<hr>	
-					<p>Daniela Datto <a href="" class="pull-right"><span class="fa fa-trash"></span> Eliminar</a></p>
-					<hr>
-					<p>Daniela Datto <a href="" class="pull-right"><span class="fa fa-trash"></span> Eliminar</a></p>
-					<hr>
-					<p>Daniela Datto <a href="" class="pull-right"><span class="fa fa-trash"></span> Eliminar</a></p>
-				</div>
-			</div>
-		</div>
-	</div>
+  			</div>
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
- 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  			<div class="col-sm-8">
+  				<h4>Selectores</h4>
+
+  				<div class="well">
+  					<form class="form-horizontal">
+  						<div class="form-group">
+  							<label for="inputEmail3" class="col-sm-1 control-label">Email</label>
+  							<div class="col-sm-5">
+  								<input type="email" class="form-control" id="inputEmail3" placeholder="Email del editor">
+  							</div>
+
+  							<label for="inputPassword3" class="col-sm-1 control-label">Nombre</label>
+  							<div class="col-sm-5">
+  								<input type="text" class="form-control" id="inputPassword3" placeholder="Nombre del editor">
+  							</div>
+  						</div>
+  						<div class="form-group">
+  							<div class="col-sm-offset-1 col-sm-10">
+  								<a href=""><span class="fa fa-plus-circle"></span> agregar selector</a>
+  							</div>
+  						</div>
+  						<div class="form-group">
+  							<div class="col-sm-offset-1 col-sm-10">
+  								<button type="submit" class="btn btn-default">Enviar invitaciones</button>
+  							</div>
+  						</div>
+  					</form>
+
+  					<hr>	
+  					<p>Daniela Datto <a href="" class="pull-right"><span class="fa fa-trash"></span> Eliminar</a></p>
+  					<hr>
+  					<p>Daniela Datto <a href="" class="pull-right"><span class="fa fa-trash"></span> Eliminar</a></p>
+  					<hr>
+  					<p>Daniela Datto <a href="" class="pull-right"><span class="fa fa-trash"></span> Eliminar</a></p>
+  				</div>
+  			</div>
+
+  			<div class="col-sm-8">
+  				<h4>Beneficios Generales
+				<div class="pull-right">
+				    <label>
+				      <input type="checkbox"> <small>seleccionar todo</small>
+				    </label>
+				  </div>
+  				</h4>
+
+  				<div class="well">
+  					<form class="form-horizontal">
+  						<div class="row">
+  							<div class="col-md-4">
+  								 <div class="checkbox">
+								    <label>
+								      <input type="checkbox"> Vacaciones
+								    </label>
+								  </div>
+
+								  <div class="checkbox">
+								    <label>
+								      <input type="checkbox"> Home Office
+								    </label>
+								  </div>
+
+								  <div class="checkbox">
+								    <label>
+								      <input type="checkbox"> Gym
+								    </label>
+								  </div>
+
+								  <div class="checkbox">
+								    <label>
+								      <input type="checkbox"> Descuentos
+								    </label>
+								  </div>
+
+								  <div class="checkbox">
+								    <label>
+								      <input type="checkbox"> Programa de bonos
+								    </label>
+								  </div>
+  							</div>
+
+
+  							<div class="col-md-4">
+  								 <div class="checkbox">
+								    <label>
+								      <input type="checkbox"> Vacaciones
+								    </label>
+								  </div>
+
+								  <div class="checkbox">
+								    <label>
+								      <input type="checkbox"> Home Office
+								    </label>
+								  </div>
+
+								  <div class="checkbox">
+								    <label>
+								      <input type="checkbox"> Gym
+								    </label>
+								  </div>
+
+								  <div class="checkbox">
+								    <label>
+								      <input type="checkbox"> Descuentos
+								    </label>
+								  </div>
+
+								  <div class="checkbox">
+								    <label>
+								      <input type="checkbox"> Programa de bonos
+								    </label>
+								  </div>
+  							</div>
+
+  							<div class="col-md-4">
+  								 <div class="checkbox">
+								    <label>
+								      <input type="checkbox"> Vacaciones
+								    </label>
+								  </div>
+
+								  <div class="checkbox">
+								    <label>
+								      <input type="checkbox"> Home Office
+								    </label>
+								  </div>
+
+								  <div class="checkbox">
+								    <label>
+								      <input type="checkbox"> Gym
+								    </label>
+								  </div>
+
+								  <div class="checkbox">
+								    <label>
+								      <input type="checkbox"> Descuentos
+								    </label>
+								  </div>
+
+								  <div class="checkbox">
+								    <label>
+								      <input type="checkbox"> Programa de bonos
+								    </label>
+								  </div>
+  							</div>
+  						</div>
+  					</form>  					
+  				</div>
+  			</div>
+
+
+  		</div>
+  	</div>
+
+
+  	<!-- Foto Perfil -->
+<div class="modal fade bs-example-modal-sm" id="fotoPerfil" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog modal-sm" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Editar foto de perfil</h4>
+      </div>
+      <div class="modal-body">
+        <a class="btn btn-lg btn-block btn-primary">Subir imagen</a>
+        <a class="btn btn-lg btn-block btn-danger">Eliminar imagen de perfil</a>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
 
   </body>
