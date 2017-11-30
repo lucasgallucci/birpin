@@ -31,6 +31,8 @@
 
 @import "timeline-user"; 
 
+@import "mailing"; 
+
 @media only screen {
     @-ms-viewport { width: device-width; }
 }
@@ -183,4 +185,9 @@ header{
 	display: flex;
 	align-items: center;
 	justify-content: center;
+}
+
+
+.blanco{
+	color: white;
 }

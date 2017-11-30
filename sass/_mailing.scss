@@ -1,0 +1,24 @@
+#mailing{
+	.well{
+		box-shadow: none;
+		border: 1px solid #dcdcdc;
+	}
+	.mensajes-predefinidos{
+		padding: 0;
+		ul{
+			list-style: none;
+			border-right: 1px solid #dcdcdc;
+			padding: 0;
+			li{
+				padding: 15px;
+				border-bottom: 1px solid #dcdcdc;
+				&:first-child{
+					background: #DDD;
+					font-weight: bold;
+					text-transform: uppercase;
+					text-align: center;
+				}
+			}
+		}
+	}
+}

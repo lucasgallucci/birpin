@@ -195,6 +195,11 @@
 		li{
 			&:first-child{
 				text-align: left; 
+				padding-left: 10px;
+				justify-content: flex-start;
+				span{
+					margin-left: 10px;
+				}
 			}
 		}
 	}
