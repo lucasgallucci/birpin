@@ -1446,6 +1446,9 @@ header {
     .semaforo span.out.on {
       background: red;
       box-shadow: 0 0 10px red; }
+.semaforo.mini span {
+  width: 10px;
+  height: 10px; }
 
 .vcenter {
   display: flex;

@@ -179,6 +179,13 @@ header{
 			}
 		}
 	}
+
+	&.mini{
+		span{
+			width: 10px;
+			height: 10px;
+		}
+	}
 }
 
 .vcenter{
