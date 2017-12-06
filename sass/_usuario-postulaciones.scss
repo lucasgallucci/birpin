@@ -5,6 +5,12 @@
 }
 
 
+.header{
+	display: flex;
+	justify-content: space-between;
+}
+
+
 #usuario-postulaciones{
 	.postulacion{
 		padding-bottom: 0;

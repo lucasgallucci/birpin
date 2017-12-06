@@ -1342,6 +1342,10 @@ body, html {
 @keyframes late {
   50% {
     transform: scale(1.1); } }
+.header {
+  display: flex;
+  justify-content: space-between; }
+
 #usuario-postulaciones .postulacion {
   padding-bottom: 0; }
   #usuario-postulaciones .postulacion h2 {
