@@ -29,7 +29,7 @@ a {
   a:hover {
     color: #1873a9; }
 
-a, p, input, button, span, label, .btn, .form-group, .form-control {
+a, p, input, button, span, label, .form-group, .form-control {
   font-size: 13px; }
 
 .shadow {
@@ -1442,6 +1442,63 @@ body, html {
         font-size: 12px; }
         #usuario-postulaciones .postulacion footer ul li:first-child {
           border-right: 1px solid #ddd; }
+
+#comprar-credito .header-comprar-creditos {
+  background: url("../imagenes/comprar_creditos.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  text-align: center; }
+  #comprar-credito .header-comprar-creditos h2 {
+    font-size: 40px;
+    text-transform: uppercase;
+    max-width: 750px;
+    margin: auto; }
+#comprar-credito .mejores-postulantes {
+  padding: 20px;
+  text-align: center;
+  color: #004E64; }
+  #comprar-credito .mejores-postulantes a {
+    margin: 10px 0;
+    font-family: "Rubik"; }
+#comprar-credito .sp1, #comprar-credito .sp2, #comprar-credito .sp3 {
+  padding: 40px; }
+  #comprar-credito .sp1 p, #comprar-credito .sp2 p, #comprar-credito .sp3 p {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 30px; }
+#comprar-credito .sp1, #comprar-credito .sp3 {
+  background: url("../imagenes/sp1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 80px; }
+  #comprar-credito .sp1 p, #comprar-credito .sp3 p {
+    color: white;
+    font-weight: 500; }
+#comprar-credito .sp2 {
+  padding: 100px 0; }
+  #comprar-credito .sp2 p {
+    font-family: "Rubik";
+    text-align: center;
+    max-width: 750px;
+    margin: auto;
+    font-size: 22px;
+    line-height: 30px;
+    color: #004E64;
+    font-weight: 700; }
+#comprar-credito .sp3 {
+  background: url("../imagenes/sp3.jpg"); }
+#comprar-credito .comprar {
+  padding: 50px 0;
+  background: white; }
+
+.flex {
+  display: flex;
+  align-items: center; }
+  .flex article {
+    flex: 1; }
 
 @media only screen {
   @-ms-viewport {
