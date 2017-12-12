@@ -1,0 +1,31 @@
+#valuacion-actores{
+	
+	.preguntas{
+		&>li{
+			margin: 20px 0;
+			.pregunta{
+				font-size: 18px;
+				font-weight: 300;
+			}
+
+			.small{
+				margin-top: 10px;
+			}
+		}
+	}
+	
+	.estrellas{
+		display: flex;
+		padding: 0;
+		list-style: none;
+		li{
+			margin-right: 10px;
+			span{
+				font-size: 50px;
+				text-shadow: 0 0 2px rgba(0,0,0,0.5);
+				color: white;
+			}
+		}
+		
+	}	
+}

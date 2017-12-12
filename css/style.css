@@ -1500,6 +1500,24 @@ body, html {
   .flex article {
     flex: 1; }
 
+#valuacion-actores .preguntas > li {
+  margin: 20px 0; }
+  #valuacion-actores .preguntas > li .pregunta {
+    font-size: 18px;
+    font-weight: 300; }
+  #valuacion-actores .preguntas > li .small {
+    margin-top: 10px; }
+#valuacion-actores .estrellas {
+  display: flex;
+  padding: 0;
+  list-style: none; }
+  #valuacion-actores .estrellas li {
+    margin-right: 10px; }
+    #valuacion-actores .estrellas li span {
+      font-size: 50px;
+      text-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+      color: white; }
+
 @media only screen {
   @-ms-viewport {
     width: device-width; } }
