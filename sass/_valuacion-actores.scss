@@ -6,6 +6,7 @@
 			.pregunta{
 				font-size: 18px;
 				font-weight: 300;
+				margin-bottom: 0;
 			}
 
 			.small{
@@ -17,13 +18,14 @@
 	.estrellas{
 		display: flex;
 		padding: 0;
+		margin: 10px 0;
 		list-style: none;
 		li{
 			margin-right: 10px;
 			span{
 				font-size: 50px;
 				text-shadow: 0 0 2px rgba(0,0,0,0.5);
-				color: white;
+				color:white;
 			}
 		}
 		

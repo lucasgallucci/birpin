@@ -56,14 +56,36 @@
 					list-style: none;
 					padding: 0;
 					min-width: 180px;
+					z-index: 99999;
 					li{
 						padding: 5px 30px;
 						font-size: 12px;
+
+						&.title{
+							text-transform: uppercase;
+							
+							font-weight: 300;
+							a{
+								font-size: 14px !important;
+							}
+						}
 						&.divider{
 							border-top: 1px solid #dedede;
 							height: 0;
 							padding: 0;
 							margin: 4px 0;
+						}
+
+						a{
+							color: $text-color;
+							&:hover{
+								font-weight: bold;
+								text-decoration: none;
+							}
+
+							&.selected{
+								color: $main-color;
+							}
 						}
 
 						.page-brand{

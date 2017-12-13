@@ -451,15 +451,28 @@ aside {
         .navbar-default .navbar-right .user .menu-user ul {
           list-style: none;
           padding: 0;
-          min-width: 180px; }
+          min-width: 180px;
+          z-index: 99999; }
           .navbar-default .navbar-right .user .menu-user ul li {
             padding: 5px 30px;
             font-size: 12px; }
+            .navbar-default .navbar-right .user .menu-user ul li.title {
+              text-transform: uppercase;
+              font-weight: 300; }
+              .navbar-default .navbar-right .user .menu-user ul li.title a {
+                font-size: 14px !important; }
             .navbar-default .navbar-right .user .menu-user ul li.divider {
               border-top: 1px solid #dedede;
               height: 0;
               padding: 0;
               margin: 4px 0; }
+            .navbar-default .navbar-right .user .menu-user ul li a {
+              color: #3b4858; }
+              .navbar-default .navbar-right .user .menu-user ul li a:hover {
+                font-weight: bold;
+                text-decoration: none; }
+              .navbar-default .navbar-right .user .menu-user ul li a.selected {
+                color: #FF9900; }
             .navbar-default .navbar-right .user .menu-user ul li .page-brand {
               max-width: 30px;
               margin-right: 5px; }
@@ -1504,12 +1517,14 @@ body, html {
   margin: 20px 0; }
   #valuacion-actores .preguntas > li .pregunta {
     font-size: 18px;
-    font-weight: 300; }
+    font-weight: 300;
+    margin-bottom: 0; }
   #valuacion-actores .preguntas > li .small {
     margin-top: 10px; }
 #valuacion-actores .estrellas {
   display: flex;
   padding: 0;
+  margin: 10px 0;
   list-style: none; }
   #valuacion-actores .estrellas li {
     margin-right: 10px; }
