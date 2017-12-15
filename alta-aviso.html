@@ -16,7 +16,7 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
-<body id="timeline">
+<body id="alta-aviso">
 	<nav class="navbar navbar-default">
 		<div class="container">
 			<!-- Brand and toggle get grouped for better mobile display -->
@@ -232,21 +232,44 @@
 						</div>
 						
 
-						<div class="form-group">
-							<label  for="tipoaviso_id" class="col-sm-3 control-label">Tipo de aviso</label>
-							<div class="col-sm-3">
-								<select class="form-control" id="tipoaviso_id" name="tipoaviso_id">
-									<option value="2" disabled >Premium (debe comprar créditos)</option>
-									<option value="1" >Standard</option>
-								</select>
-							</div>
-							<div class="col-md-6">
-								<a class="btn btn-default btn-lg" href="comprar-creditos.php">Comprar créditos</a>
-							</div>
+						<div class="row">
+							<div class="col-md-8 col-md-offset-2">
+								<div class="well tipo-anuncios">
+									<h5>Tipo de anuncio</h5>
 
-							<div class="col-xs-12">
-								<hr>
+									<ul>
+										<li class="radio">
+											<input class="radio" type="radio"> <strong class="text-uppercase">Gratuito</strong>
+											<p>El aviso será publicado en nuestra plataforma y estará en los resultados de búsqueda para todos los usuarios</p>
+										</li>
+
+										<li class="radio">
+											<input class="radio" type="radio"> <strong class="text-uppercase">Exposición extra (100 créditos)</strong>
+											<p>El aviso será publicado en nuestra plataforma, aparecerá en los primeros puestos en resultados de búsquedas</p>
+										</li>
+
+										<li class="radio">
+											<input class="radio" type="radio"> <strong class="text-uppercase">Exposición máxima (200 créditos)</strong>
+											<p>El aviso será publicado en nuestra plataforma, aparecerá en los primeros puestos en resultados de búsquedas y llegará a potenciales candidatos a través de su red social</p>
+										</li>
+									</ul>
+
+									<div class="row comprar-creditos">
+										<div class="col-md-6 text-center">
+											<h4>Créditos disponibles</h4>
+											<h2>2500</h2>
+										</div>
+
+										<div class="col-md-6 text-center">
+											<a class="btn btn-default btn-lg" href="comprar-creditos.php">Comprar créditos</a>
+										</div>
+									</div>
+
+									
+								</div>
 							</div>
+						</div>
+						
 							
 
 							<div class="form-group">
