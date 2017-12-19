@@ -20,12 +20,16 @@
 		padding: 0;
 		margin: 10px 0;
 		list-style: none;
+		align-items: center;
 		li{
 			margin-right: 10px;
 			span{
 				font-size: 50px;
 				text-shadow: 0 0 2px rgba(0,0,0,0.5);
 				color:white;
+			}
+			&:last-child{
+				margin-left: 20px;
 			}
 		}
 		

@@ -1088,6 +1088,24 @@ body, html {
         color: red; }
   #dashboard-empresa-all .datos .items p:hover .actions {
     display: inline-block; }
+#dashboard-empresa-all .emails-timeline ul {
+  padding: 0;
+  list-style: none; }
+  #dashboard-empresa-all .emails-timeline ul li {
+    padding: 10px 0;
+    border-bottom: 1px solid #dcdcdc; }
+    #dashboard-empresa-all .emails-timeline ul li a {
+      color: #3b4858; }
+    #dashboard-empresa-all .emails-timeline ul li .actions span {
+      margin: 0 4px;
+      font-size: 15px; }
+#dashboard-empresa-all .setvar {
+  display: none; }
+  #dashboard-empresa-all .setvar div {
+    display: flex;
+    align-items: center; }
+    #dashboard-empresa-all .setvar div label, #dashboard-empresa-all .setvar div input, #dashboard-empresa-all .setvar div select {
+      margin-right: 10px; }
 
 #dashboard-empresa .creditos {
   padding-bottom: 15px; }
@@ -1506,6 +1524,14 @@ body, html {
 #comprar-credito .comprar {
   padding: 50px 0;
   background: white; }
+#comprar-credito .mercadopago {
+  justify-content: center;
+  align-items: center; }
+  #comprar-credito .mercadopago img {
+    width: 100px;
+    margin: 0 10px; }
+  #comprar-credito .mercadopago h5 {
+    display: inline-block; }
 
 .flex {
   display: flex;
@@ -1525,13 +1551,16 @@ body, html {
   display: flex;
   padding: 0;
   margin: 10px 0;
-  list-style: none; }
+  list-style: none;
+  align-items: center; }
   #valuacion-actores .estrellas li {
     margin-right: 10px; }
     #valuacion-actores .estrellas li span {
       font-size: 50px;
       text-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
       color: white; }
+    #valuacion-actores .estrellas li:last-child {
+      margin-left: 20px; }
 
 #alta-aviso .tipo-anuncios ul {
   list-style: none;
@@ -1544,6 +1573,30 @@ body, html {
   align-items: center; }
   #alta-aviso .comprar-creditos h4, #alta-aviso .comprar-creditos h2 {
     margin: 0; }
+
+#alta-aviso-settings .pregunta {
+  margin: 30px 0; }
+  #alta-aviso-settings .pregunta .flex {
+    list-style: none;
+    display: flex;
+    padding: 0; }
+    #alta-aviso-settings .pregunta .flex li {
+      flex: 1;
+      border: 1px solid #dcdcdc;
+      border-radius: 5px;
+      margin: 10px;
+      padding: 10px;
+      text-align: center; }
+      #alta-aviso-settings .pregunta .flex li input {
+        display: block; }
+  #alta-aviso-settings .pregunta .label {
+    padding: 5px;
+    margin-right: 10px;
+    margin-top: 10px;
+    font-size: 12px;
+    display: inline-block; }
+    #alta-aviso-settings .pregunta .label .glyphicon {
+      font-size: 10px; }
 
 @media only screen {
   @-ms-viewport {
