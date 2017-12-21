@@ -45,7 +45,7 @@
 				</form>
 				-->
 				<div class="nav navbar-nav navbar-right">
-					<a href="" type="button" class="btn btn-default" data-toggle="modal" data-target="#login">Ingresar</a>
+					<a href="create-account-0.html" class="btn btn-default">Ingresar</a>
 				</div>
 			</div><!-- /.navbar-collapse -->
 		</div><!-- /.container-fluid -->
@@ -292,9 +292,9 @@
 				<div class="col-md-3">
 					<h5>Sobre Birpin</h5>
 					<ul>
-						<li>¿Por qué Birpin?</li>
-						<li>Equipo de proyecto</li>
-						<li>Misión y valores</li>
+						<li><a href="#" data-toggle="modal" data-target="#porque">¿Por qué Birpin?</a></li>
+						<li><a href="equipo.html" target="_blank">Equipo de proyecto</a></li>
+						<li><a href="#" data-toggle="modal" data-target="#mision">Misión y valores</a></li>
 					</ul>
 					
 				</div>
@@ -302,10 +302,10 @@
 				<div class="col-md-3">
 					<h5>Ayuda</h5>
 					<ul>
-						<li>Ayuda a postulantes</li>
-						<li>Ayuda para empresas</li>
-						<li>Publicitar en Birpin</li>
-						<li>Informar un error</li>
+						<li><a href="#" data-toggle="modal" data-target="#postulantes">Ayuda a postulantes</a></li>
+						<li><a href="#" data-toggle="modal" data-target="#empresas">Ayuda para empresas</a></li>
+						<li><a href="#" data-toggle="modal" data-target="#porque">Publicitar en Birpin</a></li>
+						<li><a href="#" data-toggle="modal" data-target="#porque">Informar un error</a></li>
 					</ul>
 				</div>
 
@@ -323,10 +323,10 @@
 					<hr>
 					<h5>Birpin en redes sociales</h5>
 					<ul class="social">
-						<li><a href=""><span class="ion-social-facebook"></span></a></li>
-						<li><a href=""><span class="ion-social-twitter"></span></a></li>
-						<li><a href=""><span class="ion-social-linkedin"></span></a></li>
-						<li><a href=""><span class="ion-social-googleplus"></span></a></li>
+						<li><a href="https://www.facebook.com/Birpin/" target="_blank"><span class="ion-social-facebook"></span></a></li>
+						<li><a href="https://www.twitter.com/birpin_/" target="_blank"><span class="ion-social-twitter"></span></a></li>
+						<li><a href="https://www.linkedin.com/company/25052485/" target="_blank"><span class="ion-social-linkedin"></span></a></li>
+						<li><a href="" target="_blank"><span class="ion-social-googleplus"></span></a></li>
 					</ul>
 				</div>
 			</div>
@@ -339,9 +339,9 @@
 						<ul>
 							<li>© 2017 · Birpin</li>
 							<li> · </li>
-							<li>Términos y condiciones</li>
-							<li>Políticas de privacidad</li>
-							<li>Seguridad</li>
+							<li><a href="tyc.html" target="_blank">Términos y condiciones</li>
+							<li><a href="privacidad.html" target="_blank">Políticas de privacidad</li>
+							<li><a href="seguridad.html" target="_blank">Seguridad</li>
 						</ul>
 					</div>
 				</div>
@@ -409,6 +409,61 @@
  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+ 	<!-- Modal -->
+	<div class="modal fade bs-example-modal-lg" id="porque" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	  <div class="modal-dialog modal-lg" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	        <h4 class="modal-title" id="myModalLabel">¿Porqué Birpin?</h4>
+	      </div>
+	      <div class="modal-body">
+	        ...
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-default" data-dismiss="modal">cerrar</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+	<!-- Modal -->
+	<div class="modal fade bs-example-modal-lg" id="equipo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	  <div class="modal-dialog modal-lg" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	        <h4 class="modal-title" id="myModalLabel">Nuestro equipo</h4>
+	      </div>
+	      <div class="modal-body">
+	        ...
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-default" data-dismiss="modal">cerrar</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+	<!-- Modal -->
+	<div class="modal fade bs-example-modal-lg" id="mision" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	  <div class="modal-dialog modal-lg" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	        <h4 class="modal-title" id="myModalLabel">Nuestra Misión y nuestros valores</h4>
+	      </div>
+	      <div class="modal-body">
+	        ...
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-default" data-dismiss="modal">cerrar</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
 
 
  	<script type="text/javascript">

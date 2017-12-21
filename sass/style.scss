@@ -40,6 +40,9 @@
 @import "alta-aviso";
 @import "alta-aviso-settings";
 
+@import "institucional";
+@import "validar-email";
+
 
 
 
@@ -207,4 +210,13 @@ header{
 
 .blanco{
 	color: white;
+}
+
+.alert-context{
+	padding: 10px;
+	border-radius: 3px;
+
+	p{ 
+		margin: 0;
+	}
 }
