@@ -1555,8 +1555,15 @@ body, html {
   .flex article {
     flex: 1; }
 
+#valuacion-actores .anonima {
+  margin: 40px 0;
+  border: 1px solid #dcdcdc;
+  border-radius: 3px;
+  padding: 15px; }
+  #valuacion-actores .anonima input {
+    margin-top: 14px; }
 #valuacion-actores .preguntas > li {
-  margin: 20px 0; }
+  margin: 50px 0; }
   #valuacion-actores .preguntas > li .pregunta {
     font-size: 18px;
     font-weight: 300;
@@ -1616,7 +1623,8 @@ body, html {
 
 #institucional header {
   padding: 100px 0;
-  background: #FF9900; }
+  background: #FF9900;
+  color: white; }
   #institucional header .birpin {
     max-width: 150px; }
   #institucional header h1 {
@@ -1632,11 +1640,23 @@ body, html {
       height: 3px;
       background: white;
       margin-bottom: 15px; }
+  #institucional header .print {
+    float: right; }
 
 #validar-email .reingresar {
   display: none; }
 #validar-email .reenviado {
   display: none; }
+
+#forgot-password {
+  background: url("../imagenes/header_login.jpg"); }
+  #forgot-password .logo {
+    max-width: 150px;
+    display: block;
+    margin: 40px auto; }
+  #forgot-password h5 {
+    margin-top: 30px;
+    margin-bottom: 30px; }
 
 @media only screen {
   @-ms-viewport {

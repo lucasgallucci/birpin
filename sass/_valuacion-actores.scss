@@ -1,8 +1,18 @@
 #valuacion-actores{
 	
+	.anonima{
+		margin: 40px 0;
+		border: 1px solid #dcdcdc;
+		border-radius: 3px;
+		padding: 15px;
+		input{
+			margin-top: 14px;
+		}
+	}
+
 	.preguntas{
 		&>li{
-			margin: 20px 0;
+			margin: 50px 0;
 			.pregunta{
 				font-size: 18px;
 				font-weight: 300;

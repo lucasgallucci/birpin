@@ -2,6 +2,7 @@
 	header{
 		padding: 100px 0;
 		background: $main-color;
+		color: white;
 		.birpin{
 			max-width: 150px;
 		}
@@ -19,6 +20,10 @@
 				background: white;
 				margin-bottom: 15px;
 			}
+		}
+
+		.print{
+			float: right;
 		}
 	}
 }
