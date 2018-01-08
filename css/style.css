@@ -710,7 +710,8 @@ body, html {
 
 .table-list .table {
   padding: 0;
-  background: white; }
+  background: white;
+  list-style: none; }
   .table-list .table ul {
     display: flex;
     justify-content: space-between;
@@ -1088,22 +1089,24 @@ body, html {
     display: none; }
   #dashboard-empresa-all .datos .profile:hover .config-btn {
     display: flex; }
-#dashboard-empresa-all .datos .items label {
-  font-size: 11px;
-  font-weight: 300;
-  text-transform: uppercase;
-  display: block; }
-#dashboard-empresa-all .datos .items p {
+#dashboard-empresa-all .datos .items {
   margin-bottom: 20px; }
-  #dashboard-empresa-all .datos .items p .actions {
-    display: none;
-    margin-left: 10px; }
-    #dashboard-empresa-all .datos .items p .actions span {
-      margin-right: 5px; }
-      #dashboard-empresa-all .datos .items p .actions span.fa-trash {
-        color: red; }
-  #dashboard-empresa-all .datos .items p:hover .actions {
-    display: inline-block; }
+  #dashboard-empresa-all .datos .items p {
+    margin-bottom: 5px; }
+    #dashboard-empresa-all .datos .items p.titulo {
+      text-transform: uppercase;
+      margin-bottom: 5px; }
+      #dashboard-empresa-all .datos .items p.titulo span {
+        margin-left: 10px; }
+    #dashboard-empresa-all .datos .items p .actions {
+      display: none;
+      margin-left: 10px; }
+      #dashboard-empresa-all .datos .items p .actions span {
+        margin-right: 5px; }
+        #dashboard-empresa-all .datos .items p .actions span.fa-trash {
+          color: red; }
+    #dashboard-empresa-all .datos .items p:hover .actions {
+      display: inline-block; }
 #dashboard-empresa-all .emails-timeline ul {
   padding: 0;
   list-style: none; }
@@ -1776,6 +1779,12 @@ header {
 
 .blanco {
   color: white; }
+
+.texto-rojo {
+  color: red; }
+
+.texto-verde {
+  color: limegreen; }
 
 .alert-context {
   padding: 10px;
