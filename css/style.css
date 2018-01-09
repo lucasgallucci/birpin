@@ -977,7 +977,8 @@ body, html {
 
 #timeline .create {
   margin-top: 20px;
-  padding: 1px 20px; }
+  padding: 1px 20px;
+  overflow: auto; }
   #timeline .create .create-post {
     padding: 0;
     display: inline-block; }
