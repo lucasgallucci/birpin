@@ -88,6 +88,25 @@ body {
 
 .post {
   margin-bottom: 10px; }
+  .post .acciones-post {
+    position: relative;
+    float: right;
+    top: 0; }
+    .post .acciones-post.comment {
+      top: -15px; }
+    .post .acciones-post .pop {
+      display: none;
+      position: absolute;
+      width: 160px;
+      left: -80px;
+      z-index: 4;
+      text-align: center;
+      padding: 8px;
+      background: white;
+      border: 1px solid #dedede;
+      border-radius: 3px; }
+    .post .acciones-post:hover .pop {
+      display: block; }
   .post .well {
     background: white;
     padding: 15px;
@@ -111,21 +130,6 @@ body {
           font-size: 11px;
           color: #1E91D6;
           text-transform: lowercase; }
-      .post .well .user .acciones-post {
-        position: relative; }
-        .post .well .user .acciones-post .pop {
-          display: none;
-          position: absolute;
-          width: 160px;
-          left: -80px;
-          z-index: 4;
-          text-align: center;
-          padding: 8px;
-          background: white;
-          border: 1px solid #dedede;
-          border-radius: 3px; }
-        .post .well .user .acciones-post:hover .pop {
-          display: block; }
     .post .well hr {
       margin: 5px 0; }
     .post .well .descripcion {

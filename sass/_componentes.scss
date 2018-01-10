@@ -65,6 +65,35 @@
 
 .post{
 	margin-bottom: 10px;
+	.acciones-post{
+		position: relative;
+		float: right;
+		top: 0;
+		&.comment{
+			top: -15px;
+		}
+		.pop{
+			display: none;
+			position: absolute;
+		    width: 160px;
+		    left: -80px;
+		    z-index: 4;
+		    text-align: center;
+		    padding: 8px;
+		    background: white;
+		    border: 1px solid #dedede;
+		    border-radius: 3px;
+		}
+
+		&:hover{
+			.pop{
+				display: block;
+			}
+		}
+	}
+
+
+
 	.well{	
 		background: white;
 		padding: 15px;
@@ -97,27 +126,7 @@
 				}
 			}
 
-			.acciones-post{
-				position: relative;
-				.pop{
-					display: none;
-					position: absolute;
-				    width: 160px;
-				    left: -80px;
-				    z-index: 4;
-				    text-align: center;
-				    padding: 8px;
-				    background: white;
-				    border: 1px solid #dedede;
-				    border-radius: 3px;
-				}
-
-				&:hover{
-					.pop{
-						display: block;
-					}
-				}
-			}
+			
 		}
 	
 
