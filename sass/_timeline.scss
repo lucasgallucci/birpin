@@ -110,8 +110,6 @@
 			}
 		}
 	}
-
-
 } 
 
 .notification{
@@ -136,3 +134,34 @@
 		}
 	}
 }
+
+
+
+	#review{
+		.review{
+			margin-bottom: 30px;
+			display: flex;
+			div{
+				flex: 1;
+			}
+			.foto{
+				max-width: 80px;
+				margin-right: 20px;
+			}
+
+			h5{
+				display: inline-block;
+			}
+			.estrellas{
+				padding: 0;
+				list-style: none;
+				display: inline-block;
+				margin-left: 10px;
+				li{
+					color: gold;
+					font-size: 15px;
+					display: inline;
+				}
+			}
+		}
+	}

@@ -1072,6 +1072,26 @@ body, html {
       border: 1px solid #d4d4d4;
       background: rgba(255, 255, 255, 0.5); }
 
+#review .review {
+  margin-bottom: 30px;
+  display: flex; }
+  #review .review div {
+    flex: 1; }
+  #review .review .foto {
+    max-width: 80px;
+    margin-right: 20px; }
+  #review .review h5 {
+    display: inline-block; }
+  #review .review .estrellas {
+    padding: 0;
+    list-style: none;
+    display: inline-block;
+    margin-left: 10px; }
+    #review .review .estrellas li {
+      color: gold;
+      font-size: 15px;
+      display: inline; }
+
 #dashboard-empresa-all .datos .profile {
   display: block;
   max-width: 150px;
