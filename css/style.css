@@ -1676,6 +1676,37 @@ body, html {
 #validar-email .reenviado {
   display: none; }
 
+#alta-cv .img-profile {
+  max-width: 150px;
+  margin: auto;
+  position: relative; }
+  #alta-cv .img-profile a {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%); }
+#alta-cv section > h4 {
+  margin: 30px 0; }
+#alta-cv .reg {
+  margin-top: 30px;
+  margin-bottom: 30px; }
+  #alta-cv .reg .options {
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    float: right;
+    padding: 5px; }
+    #alta-cv .reg .options span {
+      margin: 10px; }
+#alta-cv .well h3 {
+  margin: 20px 0; }
+#alta-cv hr {
+  clear: both;
+  display: block; }
+#alta-cv .skills > span {
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin-right: 5px; }
+
 #forgot-password {
   background: url("../imagenes/header_login.jpg"); }
   #forgot-password .logo {

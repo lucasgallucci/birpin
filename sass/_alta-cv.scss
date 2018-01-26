@@ -1,0 +1,54 @@
+#alta-cv{
+	.img-profile{
+		max-width: 150px;
+		margin: auto;
+		position: relative;
+		a{
+			position: absolute;
+			bottom: 10px;
+			left: 50%;
+    		transform: translateX(-50%)
+		}
+	}
+	
+	section{
+		&>h4{
+			margin: 30px 0;
+		}
+	}		
+	
+	.reg{
+		margin-top: 30px;
+		margin-bottom: 30px;
+
+		.options{
+			border: 1px solid #ccc;
+			border-radius: 2px;
+			float: right;
+			padding: 5px;
+			span{
+				margin: 10px;
+			}
+		}
+	}
+
+	.well{
+		h3{
+			margin: 20px 0;
+		}
+	}
+
+	hr{
+		//border-color: #444;
+		clear: both;
+		display: block;
+	}
+
+	.skills{
+		&>span{
+			padding: 10px;
+			border: 1px solid #ccc;
+			margin-right: 5px;
+		}
+	}
+}
