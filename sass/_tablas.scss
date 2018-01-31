@@ -3,6 +3,19 @@
 		padding: 0;
 		background: white;
 		list-style: none;
+
+		&.mas-alto{
+			ul{
+				padding: 15px 0 !important;
+			}
+		}
+
+		&.inverted-border{
+			ul{
+				border:none;
+				border-bottom: 1px solid #ededed;
+			}
+		}
 		ul{
 			display: flex;
 			justify-content: space-between;
@@ -16,12 +29,21 @@
 				align-items: center;
 			}
 
+			.mas-alto{
+				margin:10px 0;
+			}
+
 			li{
 				flex: 2;
 				padding: 3px;
 				text-align: center;
 				&.large{
 					flex: 5;
+					text-align: left;
+				}
+
+				&.mini{
+					flex: 1;
 					text-align: left;
 				}
 				p{

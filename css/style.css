@@ -716,6 +716,11 @@ body, html {
   padding: 0;
   background: white;
   list-style: none; }
+  .table-list .table.mas-alto ul {
+    padding: 15px 0 !important; }
+  .table-list .table.inverted-border ul {
+    border: none;
+    border-bottom: 1px solid #ededed; }
   .table-list .table ul {
     display: flex;
     justify-content: space-between;
@@ -727,12 +732,17 @@ body, html {
     transition: .5s; }
     .table-list .table ul:first-child {
       align-items: center; }
+    .table-list .table ul .mas-alto {
+      margin: 10px 0; }
     .table-list .table ul li {
       flex: 2;
       padding: 3px;
       text-align: center; }
       .table-list .table ul li.large {
         flex: 5;
+        text-align: left; }
+      .table-list .table ul li.mini {
+        flex: 1;
         text-align: left; }
       .table-list .table ul li p {
         margin: 0; }
@@ -1626,7 +1636,7 @@ body, html {
     margin: 0; }
 
 #alta-aviso-settings .pregunta {
-  margin: 30px 0; }
+  margin: 50px 0; }
   #alta-aviso-settings .pregunta .flex {
     list-style: none;
     display: flex;
@@ -1676,33 +1686,33 @@ body, html {
 #validar-email .reenviado {
   display: none; }
 
-#alta-cv .img-profile {
+#alta-cv .img-profile, #profile-cv .img-profile {
   max-width: 150px;
   margin: auto;
   position: relative; }
-  #alta-cv .img-profile a {
+  #alta-cv .img-profile a, #profile-cv .img-profile a {
     position: absolute;
     bottom: 10px;
     left: 50%;
     transform: translateX(-50%); }
-#alta-cv section > h4 {
+#alta-cv section > h4, #profile-cv section > h4 {
   margin: 30px 0; }
-#alta-cv .reg {
+#alta-cv .reg, #profile-cv .reg {
   margin-top: 30px;
   margin-bottom: 30px; }
-  #alta-cv .reg .options {
+  #alta-cv .reg .options, #profile-cv .reg .options {
     border: 1px solid #ccc;
     border-radius: 2px;
     float: right;
     padding: 5px; }
-    #alta-cv .reg .options span {
+    #alta-cv .reg .options span, #profile-cv .reg .options span {
       margin: 10px; }
-#alta-cv .well h3 {
+#alta-cv .well h3, #profile-cv .well h3 {
   margin: 20px 0; }
-#alta-cv hr {
+#alta-cv hr, #profile-cv hr {
   clear: both;
   display: block; }
-#alta-cv .skills > span {
+#alta-cv .skills > span, #profile-cv .skills > span {
   padding: 10px;
   border: 1px solid #ccc;
   margin-right: 5px; }
@@ -1716,6 +1726,14 @@ body, html {
   #forgot-password h5 {
     margin-top: 30px;
     margin-bottom: 30px; }
+
+#muro-usuario-contactos .contactos-lista {
+  display: flex;
+  flex-wrap: wrap; }
+
+#muro-usuario-cv .datos-contacto {
+  list-style: none;
+  padding: 0; }
 
 @media only screen {
   @-ms-viewport {
@@ -1847,5 +1865,8 @@ header {
   border-radius: 3px; }
   .alert-context p {
     margin: 0; }
+
+.light {
+  color: #999; }
 
 /*# sourceMappingURL=style.css.map */

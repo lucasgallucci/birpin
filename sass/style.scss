@@ -46,6 +46,9 @@
 @import "alta-cv";
 
 @import "forgot-password";
+@import "muro-usuario-contactos";
+@import "muro-usuario-cv";
+
 
 
 @media only screen {
@@ -230,4 +233,8 @@ header{
 	p{ 
 		margin: 0;
 	}
+}
+
+.light{
+	color: #999;
 }
