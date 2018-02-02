@@ -82,18 +82,25 @@
 						<li><a href="muro-usuario-informacion-personal.html">Información Personal</a></li>
 						<li><a href="muro-usuario-configuracion.html">Configuración</a></li>
 						<li class="selected"><a href="muro-usuario-cv.html">Mi CV</a></li>
+						<li><a href="muro-usuario-empresas.html">Empresas</a></li>
 						<li><a href="muro-usuario-contactos.html">Mis contactos</a></li>
 					</ul>
 				</article>
 			</aside>
 			
 			<main class="col-md-9" id="profile-cv">
+				
+				<article class="margintop20 text-right">
+					<a href="" class="btn btn-default"><span class="fa fa-upload"></span> Subir mi CV</a>
+					<a href="" class="btn btn-default"><span class="fa fa-download"></span> Descargar CV Birpin</a>
+				</article>
+				
 				<article class="well margintop20">
 					<div class="row">
   						<article class="col-xs-12 text-center" id="datos-personales">
 				          <div class="img-profile">
 				            <img class="thumbnail img-responsive" src="imagenes/no-profile-pict.svg">
-				            <a class="btn btn-sm btn-default">Agregar foto</a>
+				            <a class="btn btn-sm btn-default">cambiar foto</a>
 				          </div>
 				          
 				          <h3>Juan Carlos Monigote</h3>
@@ -106,7 +113,7 @@
 				            
 				            <br>
 
-				            <a class="btn btn-sm btn-default">Agregar contacto</a>
+				            <a class="btn btn-sm btn-default"  data-toggle="modal" data-target="#contacto">Editar contacto</a>
 				          </div>
         				</article>
 
@@ -140,6 +147,7 @@
         					<h4 class="line">Experiencia Laboral</h4>
       						<article class="reg">
         						<div class="options">
+        							<span class="fa fa-arrows-alt"></span>
           							<span class="fa fa-pencil"></span>
           							<span class="fa fa-trash"></span>
         						</div>
@@ -162,6 +170,7 @@
 
       						<article class="reg">
 					            <div class="options">
+					            	<span class="fa fa-arrows-alt"></span>
 					              	<span class="fa fa-pencil"></span>
 					              	<span class="fa fa-trash"></span>
 					            </div>
@@ -210,6 +219,53 @@
 					            <a class="btn btn-primary">Agregar educación</a>
 					        </div>
 					    </section>
+
+
+
+					<section class="col-xs-12" id="idiomas">
+						<h4 class="line">Idiomas</h4>
+						<input class="form-control input-lg" placeholder="comienza a escribir los idiomas">
+						<div>
+						
+						<div class="table-list">
+							<ul class="table">
+								<li>	
+									<ul>
+										<li class="large"><p class="text-left"><strong>Inglés</strong></p></li>
+
+										<li>
+											Avanzado
+										</li>
+
+										<li class="mini">
+											<span class="glyphicon glyphicon-remove"></span>
+										</li>
+									</ul>
+								</li>
+
+
+								<li>	
+									<ul>
+										<li class="large"><p class="text-left"><strong>Portugues</strong></p></li>
+
+										<li>
+											Avanzado
+										</li>
+
+										<li class="mini">
+											<span class="glyphicon glyphicon-remove"></span>
+										</li>
+									</ul>
+								</li>
+
+
+
+							</ul>
+						</div>
+
+						<a class="btn btn-sm btn-default"  data-toggle="modal" data-target="#idioma">ver modal (este boton no va)</a>
+						
+					</article>
 					</div>
 				</article>
 			</main>
@@ -229,7 +285,7 @@
     <div class="modal-content">
        <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="myModalLabel">Nombre</h4>
+        <h4 class="modal-title" id="myModalLabel">Datos de contacto</h4>
       </div>
       <div class="modal-body">
         <form>
@@ -251,6 +307,43 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-link" data-dismiss="modal">Cancelar</button>
+        <button type="button" class="btn btn-primary">Guardar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal fade bs-example-modal-sm" id="idioma" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+  <div class="modal-dialog modal-sm" role="document">
+    <div class="modal-content">
+       <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Inglés</h4>
+      </div>
+      <div class="modal-body">
+        <form>
+        	<div class="radio">
+			  <label>
+			    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+			    Básico
+			  </label>
+			</div>
+			<div class="radio">
+			  <label>
+			    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+			    Intermedio
+			  </label>
+			</div>
+			<div class="radio disabled">
+			  <label>
+			    <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3" disabled>
+			    Avanzado
+			  </label>
+			</div>
+        </form>
+      </div>
+      <div class="modal-footer">
         <button type="button" class="btn btn-primary">Guardar</button>
       </div>
     </div>

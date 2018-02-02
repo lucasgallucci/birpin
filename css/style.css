@@ -1735,6 +1735,12 @@ body, html {
   list-style: none;
   padding: 0; }
 
+#muro-usuario-empresas .empresa p {
+  display: inline-block; }
+#muro-usuario-empresas .empresa img {
+  max-width: 50px;
+  margin-right: 10px; }
+
 @media only screen {
   @-ms-viewport {
     width: device-width; } }
