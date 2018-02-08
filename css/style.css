@@ -961,6 +961,89 @@ body, html {
       text-transform: uppercase;
       font-size: 11px; }
 
+#index nav {
+  background: none;
+  position: relative;
+  z-index: 100000;
+  padding-top: 10px; }
+  #index nav .nav img {
+    max-width: 120px; }
+  #index nav .nav .btn-default {
+    background: none;
+    border-color: white; }
+  #index nav .nav a {
+    color: white; }
+#index header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 90%;
+  color: #FF9900;
+  overflow: hidden; }
+  #index header .filter {
+    background-image: url("../imagenes/filter.png");
+    background-repeat: repeat;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0; }
+  #index header video {
+    position: fixed;
+    width: 100%;
+    top: 0px; }
+  #index header .cto {
+    z-index: 99; }
+    #index header .cto h1 {
+      font-family: "Rubik";
+      display: inline-block;
+      color: white;
+      padding: 2px 2px;
+      font-size: 50px;
+      max-width: 800px;
+      margin: 0 auto;
+      text-transform: uppercase;
+      font-weight: 700; }
+    #index header .cto h2 {
+      font-size: 22px;
+      font-family: "Roboto"; }
+    #index header .cto h1, #index header .cto h2 {
+      text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5); }
+    #index header .cto .actions {
+      transform: translateY(100px); }
+    #index header .cto .btn {
+      font-family: "Rubik";
+      text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.2) inner;
+      /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff9900+0,f47200+99 */
+      background: #ff9900;
+      /* Old browsers */
+      background: -moz-linear-gradient(top, #ff9900 0%, #f47200 99%);
+      /* FF3.6-15 */
+      background: -webkit-linear-gradient(top, #ff9900 0%, #f47200 99%);
+      /* Chrome10-25,Safari5.1-6 */
+      background: linear-gradient(to bottom, #ff9900 0%, #f47200 99%);
+      /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff9900', endColorstr='#f47200',GradientType=0 );
+      /* IE6-9 */
+      border-bottom: 3px solid #995c00;
+      padding: 10px 30px;
+      font-size: 20px; }
+      #index header .cto .btn i {
+        padding: 10px 0;
+        padding-right: 20px;
+        margin-right: 20px;
+        border-right: 1px solid rgba(0, 0, 0, 0.1); }
+    #index header .cto a {
+      display: inline-block;
+      margin-top: 30px;
+      color: white;
+      font-family: "Rubik";
+      font-weight: 300;
+      font-size: 14px; }
+      #index header .cto a span {
+        font-size: 16px;
+        font-weight: 500; }
+
 #anuncio aside .social {
   display: flex;
   list-style: none;
@@ -1740,6 +1823,35 @@ body, html {
 #muro-usuario-empresas .empresa img {
   max-width: 50px;
   margin-right: 10px; }
+
+#parseando {
+  background: #004E64;
+  text-align: center; }
+  #parseando h2, #parseando h6 {
+    color: white; }
+  #parseando hr {
+    border-color: rgba(255, 255, 255, 0.5); }
+  #parseando img {
+    max-width: 120px;
+    margin: auto;
+    display: block; }
+  #parseando ul {
+    list-style: none;
+    padding: 0; }
+    #parseando ul li span {
+      color: white; }
+    #parseando ul li h4 {
+      display: inline-block;
+      font-size: 14px;
+      color: #999; }
+    #parseando ul li.selected h4 {
+      font-size: 18px;
+      color: white; }
+    #parseando ul li.done span {
+      color: limegreen; }
+    #parseando ul li.done h4 {
+      font-size: 14px;
+      color: #999; }
 
 @media only screen {
   @-ms-viewport {

@@ -1,0 +1,46 @@
+#parseando{
+	background: $color3;
+	text-align: center;
+	h2, h6{
+		color: white;
+	}
+	hr{
+		border-color: rgba(255,255,255,0.5);
+	}
+	img{
+		max-width: 120px;
+		margin: auto;
+		display: block;
+	}
+	ul{
+		list-style: none;
+		padding: 0;
+		li{
+			span{
+				color: white;
+			}
+			h4{
+				display: inline-block;		
+				font-size: 14px;
+				color: #999;
+			}
+
+			&.selected{
+				h4{
+					font-size: 18px;
+					color: white;
+				}
+			}
+
+			&.done{
+				span{
+					color: limegreen;
+				}
+				h4{
+					font-size: 14px;
+					color: #999;
+				}
+			}
+		}
+	}	
+}
