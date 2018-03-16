@@ -1,0 +1,138 @@
+<!doctype html>
+
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="mobileoptimized" content="0" />
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+	<title>Birpin</title>
+	<link rel="stylesheet" href="css/style.css">
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+	<nav class="navbar navbar-default">
+		<div class="container">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#"><img src="imagenes/birpin.svg"></a>
+			</div>
+
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<form class="navbar-form navbar-left buscador" id="buscador">
+					<div class="form-group">
+						<div class="input-group">
+							<input type="text" class="form-control" placeholder="Buscá empleos, personas o empresas." aria-describedby="basic-addon2">
+							<span class="input-group-addon" id="basic-addon2">
+								<span class="glyphicon glyphicon-search"></span>
+							</span>
+						</div>
+					</div>
+				</form>
+
+
+				<div class="nav navbar-nav navbar-right">
+
+					<section id="notificaciones">
+						<div class="campana">
+							<span class="fa fa-bell"></span>
+							<div class="well">
+								<div class="cuadradito"></div>
+								<ul class="notificaciones">
+									<li class="unread">
+										<img src="http://placehold.it/300x300" class="img-rounded img-responsive imagen">
+
+										<div>
+											<p><strong>Arcor</strong> publicó una <strong>oferta laboral</strong> compatible.</p>
+											<small>Hace 22 minutos</small>
+										</div>
+									</li>
+
+									<li class="unread">
+										<img src="http://placehold.it/300x300" class="img-rounded img-responsive imagen">
+
+										<div>
+											<p><strong>Pablo Tapia</strong> hizo un comentario en tu <strong>publicación</strong>.</p>
+											<small>Hace 2 horas</small>
+										</div>
+
+									</li>
+
+									<li class="unread">
+										<img src="http://placehold.it/300x300" class="img-rounded img-responsive imagen">
+
+										<div>
+											<p>A <strong>Juan Carlos Gattoni</strong> le gusta tu <strong>publicación</strong>.</p>									
+											<small>Hace 2 horas</small>
+										</div>
+
+									</li>
+
+									<li class="">
+										<img src="http://placehold.it/300x300" class="img-rounded img-responsive imagen">
+										<div>
+											<p><strong>Pablo Tapia</strong> hizo un comentario en tu <strong>publicación</strong>.</p>
+											<small>Ayer a las 22:30</small>
+										</div>
+									</li>
+
+									<li class="">
+										<img src="http://placehold.it/300x300" class="img-rounded img-responsive imagen">
+										<div>
+											<p>Hubo un avance en tu postulación a <strong>Analista de Sistemas Ssr.</strong>.</p>
+											<small>10 de Marzo a las 22:30</small>
+										</div>
+									</li>
+
+									<li class="">
+										<img src="http://placehold.it/300x300" class="img-rounded img-responsive imagen">
+										<div>
+											<p>Hay un nuevo postulante en a <strong>Analista de Sistemas Ssr.</strong>.</p>
+											<small><span class="fa fa-flag"></span> <strong>Workia</strong> · 10 de Marzo a las 22:30</small>
+										</div>
+									</li>
+								</ul>
+
+							</div>
+						</div>
+						
+					</section>
+					
+				</div>
+			</div><!-- /.navbar-collapse -->
+		</div><!-- /.container-fluid -->
+	</nav>	
+
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+	<script type="text/javascript">
+		$(document).on("ready", function(){
+			$(window).bind('scroll', function() {
+				windowTop = $(window).scrollTop();
+				$("header").css({ 
+					'background-position-y': -100 + (windowTop*0.5)+ 'px',
+				})
+			})
+		})
+	</script>
+
+</body>
+</html>

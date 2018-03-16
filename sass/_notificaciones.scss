@@ -1,0 +1,66 @@
+#notificaciones{
+	.notificaciones{
+		padding: 0;
+		list-style: none;
+		li{
+			display: flex;
+			align-items: center;
+			padding: 10px 20px;
+			border-bottom: 1px solid #dcdcdc;
+
+			.imagen{
+				flex: 1;
+				margin-right: 10px;
+				max-width: 30px;
+			}
+
+			div{
+				p{
+					margin: 0;
+					line-height: 14px;
+				}
+
+				small{
+					font-size: 10px;
+					line-height: 10px;
+				}
+			}
+		
+
+			&.unread{
+				background: #E5EBF2;
+			}
+		}
+	}	
+}
+
+
+.campana{
+	position: relative;
+	.fa-bell{
+		font-size: 20px;
+		color: white;
+	}
+	.well{
+		position: absolute;
+		width: 320px;
+		padding: 0;
+	    transform: translateX(-80%);
+	    top: 33px;
+	    .notificaciones{
+	    	z-index: 999;
+			position: relative;
+		}
+	    .cuadradito{
+	    	width: 10px;
+		    height: 10px;
+		    background: white;
+		    display: inline-block;
+		    position: absolute;
+		    transform: rotate(45deg) translateX(75%);
+		    z-index: 1;
+		    top: -10px;
+		    left: 80%;
+	    }
+	}
+}
