@@ -382,13 +382,14 @@ aside{
 }
 
 
-.tile-postulante{
+.tile-postulante, .tile-oferta{
 	text-align: center;
 	border: 1px #ddd solid; 
 	border-radius: 5px;
 	padding: 10px;
 	position: relative;
 	background: white;
+	margin-bottom: 25px;
 	
 	h4, p{
 		margin: 1px 0;
@@ -420,9 +421,54 @@ aside{
 
 		}
 	}
+
+	.matching{
+		position: absolute;
+		top: -25px;
+		right: -25px;
+		background: white;
+		border-radius: 50%;
+		font-size: 18px;
+		font-family: $title-font;
+		color: white;
+		background: $color2;
+		width: 50px;
+		height: 50px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		letter-spacing: 1px;
+	}
 }	
 
+.tile-oferta{
+	h4{
+		margin-bottom: 20px;
+	    overflow: hidden;
+	    display: -webkit-box;
+	    display: box;
+	    -webkit-line-clamp: 2;
+	    min-height: 40px;
+	    -webkit-box-orient: vertical;
+	}
+	p.text{
+		font-size: 12px;
+		line-height: 20px;
+		margin: 20px 0;
+		text-align: left;
+		overflow: hidden;
+	    display: -webkit-box;
+	    display: box;
+	    -webkit-line-clamp: 5;
+	    -webkit-box-orient: vertical;
+	    min-height: 100px;
+	}
 
+	.location{
+		margin: 10px 0;
+		font-size: 11px;
+	}
+}
 
 .like-list{
 	padding: 0;
