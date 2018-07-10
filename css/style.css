@@ -381,6 +381,13 @@ aside {
         flex: 6;
         margin: 0; }
 
+.menu-lateral-filtros {
+  list-style: none;
+  padding: 0;
+  font-size: 12px; }
+  .menu-lateral-filtros li {
+    margin-bottom: 10px; }
+
 .btn-primary {
   background: #FF9900;
   border-top: #ffa31a;
